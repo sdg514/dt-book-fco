@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!--메타 데이타-->
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta name="viewport" content="width=1280, height=720">
+  	<!--CSS-->
+	<link rel="stylesheet" type="text/css" href="./src/css/module.fonts.css" />
+	<link rel="stylesheet" type="text/css" href="./src/css/module.skill.css" />
+	<link rel="stylesheet" type="text/css" href="./src/css/popup.nav.css" />
+	<link rel="stylesheet" type="text/css" href="./src/css/popup.view.css" />
+	<link rel="stylesheet" type="text/css" href="./src/css/screen.css" />
+	<!--DATAS-->
+	<script type="text/javascript" src="src/datas/datas.index.js" ></script>
+    <!--MODULE-->
+    <script type="text/javascript" src="../../../../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../../../../js/binder_web.min.js"></script>
+	<script type="text/javascript" src="src/js/module.fn.js" ></script>
+	<script type="text/javascript" src="src/js/popup.navi.js" ></script>
+	<script type="text/javascript" src="src/js/popup.view.js" ></script>
+</head>
+
+<!--컨테이너 시작-->
+<body><div><container>
+
+	<!--화면 뷰 영역 시작--><!--기본 디자인 설정--->
+	<main><article id="mainView" data-design="">
+		
+		<!--모든 해더 내용 입력 필수--->
+	    <header>
+	    	<h1 data-subject="질문"><span>빈칸에 알맞은 말을 채워 보자!</span></h1>
+	    </header>
+	    	
+		<!--본문 내용--->
+		<section>
+			<slide>
+				<slideItem>
+					<quiz class="center">
+						<!--초성 퀴즈-->
+						<assessmentItem 
+							data-response-type="word" 
+							data-mode="click"
+							data-style="y:-10.0rem LH:9.1rem">
+							<itemBody>
+								<span>진로에 대한 유연하고 긍정적인 마음가짐은</span><br/>
+								<word><span>ㅈㄹ ㄱㄹ</span></word><span>의 어려움을 극복하는 데 도움이 된다.</span>
+							</itemBody>
+							<correctResponse>진로 경로</correctResponse>
+						</assessmentItem>
+						<!--정답 버튼-->
+						<quizBtn data-type="exReset">
+							<span>정답 보기/다시하기</span>
+						</quizBtn>
+					</quiz>
+				</slideItem>
+				
+				<slideItem>
+					<quiz class="center">
+						<!--초성 퀴즈-->
+						<assessmentItem 
+							data-response-type="word" 
+							data-mode="click"
+							data-style="y:-10.0rem LH:9.1rem">
+							<itemBody>
+								<span>자신의</span> <word><span>ㅈㄹ ㅌㅅ</span></word><span>에 대한 이해와 개발은 </span><br/>
+								<span>관심 분야의 일을 수행하는 데 도움이 된다.</span>
+							</itemBody>
+							<correctResponse>진로 특성</correctResponse>
+						</assessmentItem>
+						<!--정답 버튼-->
+						<quizBtn data-type="exReset">
+							<span>정답 보기/다시하기</span>
+						</quizBtn>
+					</quiz>
+				</slideItem>
+				
+				<slideItem>
+					<quiz class="center">
+						<!--초성 퀴즈-->
+						<assessmentItem 
+							data-response-type="word" 
+							data-mode="click"
+							data-style="y:-10.0rem LH:9.1rem">
+							<itemBody>
+								<word>직업인의 <span>ㅈㅇ ㅇㄹ</span></word><span>와 사회적 책임은 건강한</span><br/>
+								<span>일터를 만드는 토대가 된다.</span>
+							</itemBody>
+							<correctResponse>직업 윤리</correctResponse>
+						</assessmentItem>
+						<!--정답 버튼-->
+						<quizBtn data-type="exReset">
+							<span>정답 보기/다시하기</span>
+						</quizBtn>
+					</quiz>
+				</slideItem>
+				
+				<slideItem>
+					<quiz class="center">
+						<!--초성 퀴즈-->
+						<assessmentItem 
+							data-response-type="word" 
+							data-mode="click"
+							data-style="y:-10.0rem LH:9.1rem">
+							<itemBody>
+								<word><span>ㅈㅇ ㄱㅊ</span></word><span>는 자신의 삶과 진로의 방향 및 양식을</span><br/>
+								<span>만들어 가는 데 중요한 영향을 미친다.</span>
+							</itemBody>
+							<correctResponse>직업 가치</correctResponse>
+						</assessmentItem>
+						<!--정답 버튼-->
+						<quizBtn data-type="exReset">
+							<span>정답 보기/다시하기</span>
+						</quizBtn>
+					</quiz>
+				</slideItem>
+			</slide>
+		</section>
+		
+	<!--화면 뷰 영역 끝-->	
+	</article></main>
+	
+<!--컨테이너 끝-->
+</container></div></body></html>

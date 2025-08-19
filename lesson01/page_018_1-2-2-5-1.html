@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!--메타 데이타-->
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta name="viewport" content="width=1280, height=720">
+  	<!--CSS-->
+	<link rel="stylesheet" type="text/css" href="./src/css/module.fonts.css" />
+	<link rel="stylesheet" type="text/css" href="./src/css/module.skill.css" />
+	<link rel="stylesheet" type="text/css" href="./src/css/popup.nav.css" />
+	<link rel="stylesheet" type="text/css" href="./src/css/popup.view.css" />
+	<link rel="stylesheet" type="text/css" href="./src/css/screen.css" />
+	<!--DATAS-->
+	<script type="text/javascript" src="src/datas/datas.index.js" ></script>
+    <!--MODULE-->
+    <script type="text/javascript" src="../../../../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../../../../js/binder_web.min.js"></script>
+	<script type="text/javascript" src="src/js/module.fn.js" ></script>
+	<script type="text/javascript" src="src/js/popup.navi.js" ></script>
+	<script type="text/javascript" src="src/js/popup.view.js" ></script>
+</head>
+
+<!--컨테이너 시작-->
+<body><div><container>
+
+	<!--화면 뷰 영역 시작--><!--기본 디자인 설정--->
+	<main><article id="mainView" data-design="">
+		<!--모든 해더 내용 입력 필수--->
+	    <header>
+	    	<h1 data-subject="연필" data-style="Fs:3.6rem">
+				<span>관심 직업 및 전공 분야에서 요구하는 진로 특성, 직무, 학업 수행 등을 구체적으로 알아보자.</span>
+			</h1>
+	    </header>
+		
+		<!--본문 내용--->
+		<section>
+			
+			<slide>
+				<slideItem>
+					
+					<quiz id="q1" data-style="P:a x:0 y:0">
+						
+						<div role="table" data-style="D:ib P:r w:100% h:43.0rem BG:images/page_018_2-2-2-5-1/bg-내용판-01.png">
+							<div role="thead">
+								<ul role="tr">
+									<li role="th"><span>항목</span></li>
+									<li role="th"><span>내용</span></li>
+								</ul>
+							</div>
+							
+							<div role="tbody">
+								
+								<ul role="tr">
+									<li role="td"><span>나의 관심 직업</span></li>
+									<li role="td">
+										<assessmentItem data-response-type="input" data-type="feedback" data-style="w:100% h:100%">
+								
+											<itemBody>
+												<input type="text"/>
+											</itemBody>
+											<assessFeedback data-style="Fw:500 Ta:c">
+												<p>중・고등학교 교사</p>
+											</assessFeedback>
+											<button data-quick-btn="answerReset" data-style="P:a r:-2rem y:-0.5rem">정답 보기/다시하기</button>
+										</assessmentItem>
+									</li>
+								</ul>
+								
+								<ul role="tr">
+									<li role="td" data-style="LH:14.6rem"><span>하는 일</span></li>
+									<li role="td">
+										<assessmentItem data-response-type="input" data-type="feedback" data-style="w:100% h:100% LH:3.5rem">
+								
+											<itemBody>
+												<textarea></textarea>
+											</itemBody>
+											<assessFeedback data-style="Fw:500">
+												<ul data-type="점">
+													<li>
+														<span>·</span>
+														<p>교과 전문가로서 학생들에게 담당 교과목을 가르치고 학생들의 생활을 지도한다.</p>
+													</li>
+												</ul>
+												<ul data-type="점" data-style="mt:-0.8rem">
+													<li>
+														<span>·</span>
+														<p>학생들에게 지식을 가르치고 교육하며 학생들의 미래 역량을 향상시킨다.</p>
+													</li>
+												</ul>
+												<ul data-type="점">
+													<li>
+														<span>·</span>
+														<p>주된 업무는 교과목을 지도하는 것이지만 담임을 맡으면 학급 경영을 비롯해 학생 생<br/>활지도 등 학교생활 전반적인 사항을 지도한다.</p>
+													</li>
+												</ul>
+											</assessFeedback>
+											<button data-quick-btn="answerReset" data-style="P:a r:-2rem b:0">정답 보기/다시하기</button>
+										</assessmentItem>
+
+									</li>
+								</ul>
+
+								<ul role="tr">
+									<li role="td"><span>관련 학과</span></li>
+									<li role="td">
+										<!--보기 퀴즈-->
+										<assessmentItem data-response-type="input" data-type="feedback" data-style="w:100% h:100% LH:5rem">
+								
+											<itemBody>
+												<textarea></textarea>
+											</itemBody>
+											<assessFeedback data-style="Fw:500">
+												<p>관련 학과의 교사가 되기 위한 전공과목, 교사에게 필요한 심리학, 교육학 등 교사의 직무를 감당하기 위한 교양과목</p>
+											</assessFeedback>
+											<button data-quick-btn="answerReset" data-style="P:a r:-2rem b:0">정답 보기/다시하기</button>
+										</assessmentItem>
+									</li>
+								</ul>
+
+								<ul role="tr">
+									<li role="td" data-style="mt:1.5rem"><span>관련 자격 및<br/> 훈련 정보</span></li>
+									<li role="td">
+										<!--보기 퀴즈-->
+										<assessmentItem data-response-type="input" data-type="feedback" data-style="w:100% h:100%">
+								
+											<itemBody>
+												<textarea></textarea>
+											</itemBody>
+											<assessFeedback data-style="Fw:500 LH:9rem">
+												<p>관련 교과에 대한 정교사 자격증, 현장 교생 실습 등</p>
+											</assessFeedback>
+											<button data-quick-btn="answerReset" data-style="P:a r:-2rem b:0">정답 보기/다시하기</button>
+										</assessmentItem>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<style>
+							#q1 [role="thead"]{
+								font-family:'Jamsil';
+								font-size:2.6rem;
+								font-weight:400;
+								color:#fff;
+								text-align:center;
+							}
+							#q1 [role="tbody"]{
+								font-family:'Jamsil';
+								font-size:2.6rem;
+								font-weight:400;
+							}
+							#q1 [role]>ul{
+								display:table;
+								clear:both;
+							}
+							#q1 [role]>ul>li{
+								float:left;
+								height:6.3rem;
+								line-height:6.3rem;
+								padding:0 1.0rem;
+							}
+							#q1 [role="thead"] ul>li{
+								height:4.6rem;
+								line-height:4.6rem;
+							}
+								#q1 [role="thead"]>ul>li:nth-child(1){
+									width:23.4rem;
+								}
+								#q1 [role="thead"]>ul>li:nth-child(2){
+									width:94.6rem;
+								}
+								#q1 [role="tbody"]>ul>li:nth-child(1){
+									width:23.4rem;
+								}
+								#q1 [role="tbody"]>ul>li:nth-child(2){
+									width:94.6rem;
+								}
+
+							#q1 [role="tbody"] ul>li span{
+								color:#666999;
+							}
+							#q1 [role="tbody"]>ul>li:nth-child(1){
+								text-align: center;
+							}
+
+							#q1 [role="tbody"] ul:nth-child(1)>li{
+								height:4.5rem;
+								line-height:4.5rem;
+							}
+
+							#q1 [role="tbody"]>ul:nth-child(2)>li{
+								height:14.6rem;
+							}
+							#q1 [role="tbody"]>ul:nth-child(3)>li{
+								height:10.0rem;
+								line-height:9.8rem;
+							}
+							#q1 [role="tbody"]>ul:nth-child(4)>li{
+								height: 9.5rem;
+								line-height:3rem;
+							}
+						</style>
+						<quizBtn data-type="exReset">
+							<span>정답 보기/다시하기</span>
+						</quizBtn>
+					</quiz>
+				</slideItem>
+				
+				<slideItem>
+					<quiz id="q2" data-style="P:a x:0 y:0">
+						
+						<div role="table" data-style="D:ib P:r w:100% h:43.0rem BG:images/page_018_2-2-2-5-1/bg-내용판-02.png">
+							<div role="thead">
+								<ul role="tr">
+									<li role="th"><span>항목</span></li>
+									<li role="th" colspan="3"><span>내용</span></li>
+								</ul>
+							</div>
+							<div role="tbody">
+								
+								<ul role="tr">
+									<li role="td" rowspan="2"><span>능력/지식/환경</span></li>
+									<li role="td" data-style="h:3.3rem LH:3.3rem"><span>업무 수행 능력</span></li>
+									<li role="td" data-style="h:3.3rem LH:3.3rem"><span>지식</span></li>
+									<li role="td" data-style="h:3.3rem LH:3.3rem"><span>환경</span></li>
+									<li role="td" data-style="w:31.4rem h:12.6rem LH:3.5rem">
+										<!--보기 퀴즈-->
+										<assessmentItem data-response-type="input" data-type="feedback" data-style="w:100% h:100%">
+								
+											<itemBody>
+												<textarea></textarea>
+											</itemBody>
+											<assessFeedback data-style="Fw:500 Ta:j">
+												<p data-style="pt:2.5rem">가르치는 능력, 학습 전략을 세우는 능력, 말하기 능력 등</p>
+											</assessFeedback>
+											<button data-quick-btn="answerReset" data-style="P:a r:-2rem y:-4.5rem">정답 보기/다시하기</button>
+										</assessmentItem>
+									</li>
+									<li role="td" data-style="w:31.4rem h:12.6rem LH:3.5rem">
+										<assessmentItem data-response-type="input" data-type="feedback" data-style="w:100% h:100%">
+								
+											<itemBody>
+												<textarea></textarea>
+											</itemBody>
+											<assessFeedback data-style="Fw:500 Ta:j">
+												<p data-style="pt:1rem">교사가 되기 위한 교생 실습, 상담, 심리, 사무 능력, 담당 교과와 관련된 지식</p>
+											</assessFeedback>
+											<button data-quick-btn="answerReset" data-style="P:a r:-2rem y:-4.5rem">정답 보기/다시하기</button>
+										</assessmentItem>
+									</li>
+									<li role="td" data-style="w:31.4rem h:12.6rem LH:3.5rem">
+										<assessmentItem data-response-type="input" data-type="feedback" data-style="w:100% h:100%">
+								
+											<itemBody>
+												<textarea></textarea>
+											</itemBody>
+											<assessFeedback data-style="Fw:500 Ta:j">
+												<p data-style="pt:1rem LS:-0.1rem">연설, 발표, 회의, 공문서 주고받기, 리더십 키우기 등을 경험할 수 있는 환경이 유리함</p>
+											</assessFeedback>
+											<button data-quick-btn="answerReset" data-style="P:a r:-2rem y:-4.5rem">정답 보기/다시하기</button>
+										</assessmentItem>
+									</li>
+								</ul>
+
+								<ul role="tr">
+									<li role="td" rowspan="2"><span>성격/흥미/가치관</span></li>
+									<li role="td" data-style="h:3.3rem LH:3.3rem"><span>성격</span></li>
+									<li role="td" data-style="h:3.3rem LH:3.3rem"><span>흥미</span></li>
+									<li role="td" data-style="h:3.3rem LH:3.3rem"><span>가치관</span></li>
+									<li role="td" data-style="w:31.4rem h:12.6rem LH:3.5rem">
+										<!--보기 퀴즈-->
+										<assessmentItem data-response-type="input" data-type="feedback" data-style="w:100% h:100%">
+								
+											<itemBody>
+												<textarea></textarea>
+											</itemBody>
+											<assessFeedback data-style="Fw:500 Ta:j">
+												<p data-style="pt:1rem">아이들을 진심으로 사랑해 주고 타인과 대화를 통해 소통하며 교류할 수 있는 성격</p>
+											</assessFeedback>
+											<button data-quick-btn="answerReset" data-style="P:a r:-2rem y:-4.5rem">정답 보기/다시하기</button>
+										</assessmentItem>
+									</li>
+									<li role="td" data-style="w:31.4rem h:12.6rem LH:3.5rem">
+										<assessmentItem data-response-type="input" data-type="feedback" data-style="w:100% h:100%">
+								
+											<itemBody>
+												<textarea></textarea>
+											</itemBody>
+											<assessFeedback data-style="Fw:500 Ta:j">
+												<p data-style="pt:1rem">다른 사람을 돕고 가르치는 것에 흥미가 있으며 맡은 일에 책임감이 높음</p>
+											</assessFeedback>
+											<button data-quick-btn="answerReset" data-style="P:a r:-2rem y:-4.5rem">정답 보기/다시하기</button>
+										</assessmentItem>
+									</li>
+									<li role="td" data-style="w:31.4rem h:12.6rem LH:3.5rem">
+										<assessmentItem data-response-type="input" data-type="feedback" data-style="w:100% h:100%">
+								
+											<itemBody>
+												<textarea></textarea>
+											</itemBody>
+											<assessFeedback data-style="Fw:500 Ta:j">
+												<p data-style="pt:1rem">남을 위해 봉사하고 원하는 목표를 안정적으로 성취하는 것이 중요함</p>
+											</assessFeedback>
+											<button data-quick-btn="answerReset" data-style="P:a r:-2rem y:-4.5rem">정답 보기/다시하기</button>
+										</assessmentItem>
+									</li>
+								</ul>
+
+								<ul role="tr">
+									<li role="td"><span>관련 직업</span></li>
+									<li role="td" colspan="3" data-style="w:94.2rem">
+										<assessmentItem data-response-type="input" data-type="feedback" data-style="w:100% h:100%">
+								
+											<itemBody>
+												<input type="text"/>
+											</itemBody>
+											<assessFeedback data-style="Fw:500 Ta:j">
+												<p>교육자 및 검토관, 교육학 연구원, 사이버 교육 운영자, 학원 강사 등</p>
+											</assessFeedback>
+											<button data-quick-btn="answerReset" data-style="P:a r:-2rem y:0rem">정답 보기/다시하기</button>
+										</assessmentItem>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<style>
+							#q2 [role="thead"]{
+								font-family:'Jamsil';
+								font-size:2.6rem;
+								font-weight:400;
+								color:#fff;
+								text-align:center;
+							}
+							#q2 [role="tbody"]{
+								font-family:'Jamsil';
+								font-size:2.6rem;
+								font-weight:400;
+								text-align:center;
+							}
+							#q2 [role]>ul{
+								display:table;
+								clear:both;
+							}
+							#q2 [role]>ul>li{
+								float:left;
+								height:6.3rem;
+								line-height:6.3rem;
+								padding:0 1.0rem;
+							}
+							#q2 [role="thead"] ul>li{
+								height:3.5rem;
+								line-height:3.5rem;
+							}
+								#q2 [role="thead"]>ul>li:nth-child(1){
+									width:23.4rem;
+									text-align:center;
+								}
+								#q2 [role="thead"]>ul>li:nth-child(2){
+									width:94.6rem;
+									text-align:center;
+								}
+								#q2 [role="tbody"]>ul>li:nth-child(1){
+									width:23.4rem;
+									text-align:center;
+								}
+								#q2 [role="tbody"]>ul>li:nth-child(2){
+									width:31.4rem;
+									text-align:center;
+								}
+								#q2 [role="tbody"]>ul>li:nth-child(3){
+									width:31.4rem;
+									text-align:center;
+								}
+								#q2 [role="tbody"]>ul>li:nth-child(4){
+									width:31.4rem;
+									text-align:center;
+								}
+								#q2 [role="tbody"]>ul>li>span{
+									color: #666999;
+								}
+							#q2 [role="tbody"] ul:nth-child(1)>li{
+								height:16rem;
+								line-height:16rem;
+							}
+							#q2 [role="tbody"]>ul:nth-child(2)>li{
+								height:16rem;
+								line-height:16rem;
+							}
+							#q2 [role="tbody"]>ul:nth-child(3)>li{
+								height:7.4rem;
+								line-height:7.4rem;
+							}
+						</style>
+						<quizBtn data-type="exReset">
+							<span>정답 보기/다시하기</span>
+						</quizBtn>
+					</quiz>
+				</slideItem>
+			</slide>
+			
+		</section>
+		
+	<!--화면 뷰 영역 끝-->	
+	</article></main>
+	
+<!--컨테이너 끝-->
+</container></div></body></html>

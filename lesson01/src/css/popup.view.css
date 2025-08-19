@@ -1,0 +1,1179 @@
+@keyframes rotateX{
+	from{
+		transform: rotateX( 0deg );
+	}
+	to{
+		transform: rotateX( 180deg );
+	}
+}
+
+/**================================
+ * 주제
+ =================================**/
+
+#mainView>header{
+	padding:0 5.0rem;
+}
+
+[data-subject]{
+	position:relative;
+	font-family:'Elec';
+	font-size:4rem;
+	line-height:5.5rem;
+	margin-bottom:10px;
+}
+	/**
+	 * 	질문
+	 */
+	[data-subject="질문"]{
+		margin-top:3.5rem;
+		position:relative;
+		padding-left:10.0rem;
+	}
+	[data-subject="질문"]:before{
+		content:'';
+		width:9.0rem; height:9.2rem;
+		background-image:url('../com/images/chars/질문-캐릭터.png');
+		margin-right:1.0rem;
+		position:absolute;
+		left:0; top:0;
+	}
+	[data-subject="질문"]>*{
+		position:relative;
+		top:2.0rem;
+	}
+	/**
+	 * 	질문
+	 */
+	[data-subject="연필"]{
+		margin-top:3.5rem;
+		position:relative;
+		padding-left:4.4rem;
+	}
+	[data-subject="연필"]:before{
+		content:'';
+		width:3.4rem; height:3.4rem;
+		background-image:url('../com/images/icons/연필.png');
+		position:absolute;
+		left:0; top:1.1rem;
+	}
+	
+	/**
+	 * 	중앙
+	 */
+	[data-subject="중앙"]{
+		width:100%;
+		text-align:center;
+		margin-top:2.8rem;
+		margin-bottom:2.8rem;
+	}
+		[data-subject="중앙"]>span{
+			position:relative;
+		}
+		[data-subject="중앙"]>span:before{
+			content:'';
+			width:3.2rem; height:2.3rem;
+			background-image:url('../com/images/titles/중앙-r.png');
+			position:absolute;
+			left:-4.5rem; top:1.0rem;
+		}
+		[data-subject="중앙"]>span:after{
+			content:'';
+			width:3.2rem; height:2.3rem;
+			background-image:url('../com/images/titles/중앙-l.png');
+			position:absolute;
+			right:-4.5rem; top:1.0rem;
+		}
+		[data-subject="중앙"]>span:before,
+		[data-subject="중앙"]>span:after{
+			animation:rotateX 1s ease-in-out 0.5s infinite normal both running;
+		}
+		
+	/**
+	 * 	영화로 생각 두드리기
+	 */
+	[data-subject="영화로 생각 두드리기"]{
+		font-size:0;
+		width:18.6rem; height:16.1rem;
+		background-image:url('../com/images/titles/영화로 생각 두드리기.png');
+		position:absolute;
+		left:0rem; top:0rem;
+	}
+	/**
+	 * 	영화로 생각 두드리기
+	 */
+	[data-subject="만화로 생각 두드리기"]{
+		font-size:0;
+		width:18.6rem; height:16.1rem;
+		background-image:url('../com/images/titles/만화로 생각 두드리기.png');
+		position:absolute;
+		left:0rem; top:0rem;
+	}
+	/**
+	 * 	영화로 생각 두드리기
+	 */
+	[data-subject="드라마로 생각 두드리기"]{
+		font-size:0;
+		width:19.4rem; height:15.4rem;
+		background-image:url('../com/images/titles/드라마로 생각 두드리기.png');
+		position:absolute;
+		left:0rem; top:0rem;
+	}
+	/**
+	 * 	영화로 생각 두드리기
+	 */
+	[data-subject="사례로 생각 두드리기"]{
+		font-size:0;
+		width:17.8rem; height:15.4rem;
+		background-image:url('../com/images/titles/사례로 생각 두드리기.png');
+		position:absolute;
+		left:0.5rem; top:0rem;
+	}
+	/**
+	 * 	영화로 생각 두드리기
+	 */
+	[data-subject="음악으로 생각 두드리기"]{
+		font-size:0;
+		width:17.3rem; height:15.4rem;
+		background-image:url('../com/images/titles/음악으로 생각 두드리기.png');
+		position:absolute;
+		left:0.8rem; top:0rem;
+	}
+	/**
+	 * 	영화로 생각 두드리기
+	 */
+	[data-subject="통계로 생각 두드리기"]{
+		font-size:0;
+		width:17.3rem; height:15.4rem;
+		background-image:url('../com/images/titles/통계로 생각 두드리기.png');
+		position:absolute;
+		left:1rem; top:0rem;
+	}
+	/**
+	 * 	영화로 생각 두드리기
+	 */
+	[data-subject="숫자"]{
+		padding-left:3.5rem;
+		letter-spacing:-0.1rem;
+	}
+	#mainView>header>[data-subject="숫자"]{
+		margin-top:3.5rem;
+	}
+		[data-subject="숫자"]>*:nth-child(1){
+			position:absolute;
+			left:0; top:0.3rem;
+			font-family:'Jamsil';
+			font-size:3.8rem;
+			font-weight:500;
+			color:#324693;
+		}
+	/**
+	 * 	정리하기
+	 */
+	[data-subject="정리하기"]{
+		margin-top:3.5rem;
+		position:relative;
+		padding-left:10.0rem;
+	}
+	[data-subject="정리하기"]:before{
+		content:'';
+		width:9.0rem; height:9.2rem;
+		background-image:url('../com/images/chars/정리하기-캐릭터.png');
+		position:absolute;
+		left:0;top:0;
+	}
+	[data-subject="정리하기"]>*{
+		position:relative;
+		top:2.0rem;
+	}
+		
+	/**
+	 * 	주의해요
+	 */
+	[data-subject="주의해요!"]{
+		margin-top:3.5rem;
+		position:relative;
+		padding-left:10.0rem;
+		margin-bottom:4.5rem;
+	}
+	[data-subject="주의해요!"]:before{
+		content:'';
+		width:8.3rem; height:9.9rem;
+		background-image:url('../com/images/chars/주의해요-캐릭터.png');
+		position:absolute;
+		left:0;top:0;
+	}
+	[data-subject="주의해요!"]>span{
+		position:relative;
+		display:inline-block;
+		left:-2.5rem; top:0.7rem;
+		
+		width:24.5rem; height:7.8rem;
+		line-height:8.2rem;
+		text-align:center;
+		font-family:'Elec';
+		font-size:3.8rem;
+		text-indent:2.0rem;
+		color:#ffeb88;
+		background-image:url('../com/images/bgs/주의해요-말풍선.png');
+	}	
+	/**
+	 * 	AI로 진로
+	 */
+	[data-subject="AI로 진로"]{
+		margin-top:2.0rem;
+		position:relative;
+		padding-left:10.0rem;
+		line-height:3.0rem;
+		margin-bottom:2.0rem;
+	}	
+		[data-subject="AI로 진로"]>*:nth-child(1){
+			font-size:0;
+			width:8.7rem; height:6.1rem;
+			background-image:url('../com/images/titles/ai로 진로.png');
+			position:absolute;
+			left:0;top:0.8rem;
+		}
+		[data-subject="AI로 진로"]>*:nth-child(2){
+			display:block;
+			font-size:3.9rem;
+			line-height:4.2rem;
+			color:#2871b1;
+		}
+		[data-subject="AI로 진로"]>*:nth-child(3){
+			font-size:2.7rem;
+			line-height:3.0rem;
+			color:#151823;
+		}
+/**================================
+ * 
+ =================================**/
+[data-icon="예"]{
+	position:relative;
+	display:inline-block;
+	width:2.8rem; height:2.8rem;
+	line-height:3.0rem;
+	text-align:center;
+	font-size:1.5rem;
+	background-color:#324693;
+	border-radius:100%;
+	color:#fff;
+}
+[data-icon="숫자"]{
+	font-family:'Jamsil';
+	font-size:3.8rem;
+	font-weight:500;
+	color:#324693;
+	position:relative;
+	left:0; top:0.3rem;
+}
+[data-icon="화살표"]{
+	font-size:0rem;
+	display:inline-block;
+	width:4.1rem; height:2.9rem;
+	background-image:url('../com/images/icons/화살표.png');
+}
+
+/**================================
+ * 
+ =================================**/
+[data-note]{
+	position:relative;
+	font-family:'Nanum';
+	font-weight:500;
+}
+	[data-note="Q"],
+	[data-note="A"]{
+		padding-left:3.3rem;
+	}
+	[data-note="Q"]>*:nth-child(1),
+	[data-note="A"]>*:nth-child(1){
+		position:absolute;
+		left:0; top:0;
+	}
+	
+	[data-note="예"]{
+		color:#0026b3;
+		padding-left:5.0rem;
+	}
+		[data-note="예"]>*:nth-child(1){
+			position:relative;
+			display:inline-block;
+			width:4.0rem; height:4.0rem;
+			background-image:url('../com/images/icons/예.png');
+			font-size:0;
+			position:absolute;
+			left:0; top:0;
+		}
+/**================================
+ * 
+ =================================**/
+[data-box]{
+	position:relative;
+	border-radius:2.0rem;
+	padding:2.5rem 3.0rem;
+}
+	[data-box="회색"]{
+		background-color:#f3f1ef;
+	}
+
+
+/**================================
+ * 
+ =================================**/
+
+ul[data-type="소점"]>li{
+	font-family:'Nanum';
+	font-size:4.0rem;
+	font-weight:500;
+	line-height:6.0rem;
+	padding-left:2.5rem;
+	position:relative;
+}
+	ul[data-type="소점"]>li>*:nth-child(1){
+		font-size:0;
+		width:1.5rem; height:2.0rem;
+		position:absolute;
+		left:0; top:1.9rem;
+		background-image:url('../com/images/icons/소점.png');
+	}
+	
+ul[data-type="점"]>li{
+	font-family:'Nanum';
+	font-weight:500;
+	padding-left:2.0rem;
+	position:relative;
+}
+	ul[data-type="점"]>li>*:nth-child(1){
+		color:#0026b3;
+		position:absolute;
+		left:0; top:0;
+		transform:scale(1.5);
+	}
+
+/**================================
+ * 팝업
+ =================================**/
+
+popup[data-type="설명"] .popupIcon{
+	font-size:0;
+	width:5.9rem; height:6.0rem;
+	background-image:url('../com/images/btns/버튼-클릭.png');
+}
+popup[data-type="tip"] .popupIcon{
+	font-size:0;
+	width:9.7rem; height:8.5rem;
+	background-image:url('../com/images/btns/팝업-tip.png');
+}
+
+popup[data-type="AI"] .popupIcon{
+	font-size:0;
+	width:27.9rem; height:8.8rem;
+	background-image:url('../com/images/btns/팝업-인공 지능.png');
+}
+
+popupView.on{
+	display:-webkit-box !important;
+	display:-moz-box !important;
+	display:-ms-flexbox !important;
+	display:flex !important;
+	-webkit-box-pack:center;
+	-moz-box-justify-content:center;
+	-ms-flex-pack:center;
+	justify-content:center;
+	-webkit-box-align:center;
+	-moz-align-items:center;
+	-ms-flex-align:center;
+	align-items:center;
+}
+
+/**=================================**/
+
+popupView[data-type="AI"]>div,
+popupView[data-type="설명"]>div,
+popupView[data-type="tip"]>div{
+	width:100.5rem; height:54.9rem;
+	position:relative;
+	border:1.5rem solid #7282cd;
+	border-radius:50.0rem;
+	background-color:#fff;
+}
+
+	popupView[data-type="AI"][data-color="자주"]>div,
+	popupView[data-type="설명"][data-color="자주"]>div,
+	popupView[data-type="tip"][data-color="자주"]>div{
+		border-color:#ef728a;
+	}
+	popupView[data-type="AI"][data-color="남색"]>div,
+	popupView[data-type="설명"][data-color="남색"]>div,
+	popupView[data-type="tip"][data-color="남색"]>div{
+		border-color:#7282cd;
+	}
+	popupView[data-type="AI"][data-color="청록"]>div,
+	popupView[data-type="설명"][data-color="청록"]>div,
+	popupView[data-type="tip"][data-color="청록"]>div{
+		border-color:#0fc1c3;
+	}
+	popupView[data-type="AI"][data-color="녹두"]>div,
+	popupView[data-type="설명"][data-color="녹두"]>div,
+	popupView[data-type="tip"][data-color="녹두"]>div{
+		border-color:#7fb23c;
+	}
+	popupView[data-type="AI"][data-color="녹색"]>div,
+	popupView[data-type="설명"][data-color="녹색"]>div,
+	popupView[data-type="tip"][data-color="녹색"]>div{
+		border-color:#1dc095;
+	}
+	popupView[data-type="AI"][data-color="파랑"]>div,
+	popupView[data-type="설명"][data-color="파랑"]>div,
+	popupView[data-type="tip"][data-color="파랑"]>div{
+		border-color:#4b8edc;
+	}
+	popupView[data-type="AI"][data-color="진파랑"]>div,
+	popupView[data-type="설명"][data-color="진파랑"]>div,
+	popupView[data-type="tip"][data-color="진파랑"]>div{
+		border-color:#5c70f4;
+	}
+		
+	popupView[data-type="AI"] header,
+	popupView[data-type="설명"] header,
+	popupView[data-type="tip"] header{
+		position:static;
+		width:100%; height:9.0rem;
+		right:0; top:-0rem;
+		text-align:center;
+	}
+		popupView[data-type="AI"] header h1,
+		popupView[data-type="설명"] header h1,
+		popupView[data-type="tip"] header h1{
+			display:inline-block;
+			font-family:'Elec';
+			font-size:4.2rem;
+			line-height:9.0rem;
+			padding:0 3.5rem;
+			color:#fff;
+			border-radius:0 0 5.0rem 5.0rem;
+			position:relative;
+			top:-1.4rem;
+		}
+		popupView[data-type="AI"][data-color="자주"] header h1,
+		popupView[data-type="설명"][data-color="자주"] header h1,
+		popupView[data-type="tip"][data-color="자주"] header h1{
+			background-color:#ef728a;
+		}
+		popupView[data-type="AI"][data-color="남색"] header h1,
+		popupView[data-type="설명"][data-color="남색"] header h1,
+		popupView[data-type="tip"][data-color="남색"] header h1{
+			background-color:#7282cd;
+		}
+		popupView[data-type="AI"][data-color="청록"] header h1,
+		popupView[data-type="설명"][data-color="청록"] header h1,
+		popupView[data-type="tip"][data-color="청록"] header h1{
+			background-color:#0fc1c3;
+		}
+		popupView[data-type="AI"][data-color="녹두"] header h1,
+		popupView[data-type="설명"][data-color="녹두"] header h1,
+		popupView[data-type="tip"][data-color="녹두"] header h1{
+			background-color:#7fb23c;
+		}
+		popupView[data-type="AI"][data-color="녹색"] header h1,
+		popupView[data-type="설명"][data-color="녹색"] header h1,
+		popupView[data-type="tip"][data-color="녹색"] header h1{
+			background-color:#1dc095;
+		}
+		popupView[data-type="AI"][data-color="파랑"] header h1,
+		popupView[data-type="설명"][data-color="파랑"] header h1,
+		popupView[data-type="tip"][data-color="파랑"] header h1{
+			background-color:#4b8edc;
+		}
+		popupView[data-type="AI"][data-color="진파랑"] header h1,
+		popupView[data-type="설명"][data-color="진파랑"] header h1,
+		popupView[data-type="tip"][data-color="진파랑"] header h1{
+			background-color:#5c70f4;
+		}
+	
+	popupView[data-type="AI"] [data-popup-btn="popupClose"],
+	popupView[data-type="설명"] [data-popup-btn="popupClose"],
+	popupView[data-type="tip"] [data-popup-btn="popupClose"]{
+		width:7.4rem; height:7.1rem;
+		position:absolute;
+		right:7.3rem; top:-1.0rem;
+		background-image:url('../com/images/btns/팝업-설명 닫기-남색.png');
+	}
+	
+	popupView[data-type="AI"][data-color="자주"] [data-popup-btn="popupClose"],
+	popupView[data-type="설명"][data-color="자주"] [data-popup-btn="popupClose"],
+	popupView[data-type="tip"][data-color="자주"] [data-popup-btn="popupClose"]{background-image:url('../com/images/btns/팝업-설명 닫기-자주.png');}
+	popupView[data-type="AI"][data-color="남색"] [data-popup-btn="popupClose"],
+	popupView[data-type="설명"][data-color="남색"] [data-popup-btn="popupClose"],
+	popupView[data-type="tip"][data-color="남색"] [data-popup-btn="popupClose"]{background-image:url('../com/images/btns/팝업-설명 닫기-남색.png');}
+	popupView[data-type="AI"][data-color="청록"] [data-popup-btn="popupClose"],
+	popupView[data-type="설명"][data-color="청록"] [data-popup-btn="popupClose"],
+	popupView[data-type="tip"][data-color="청록"] [data-popup-btn="popupClose"]{background-image:url('../com/images/btns/팝업-설명 닫기-청록.png');}
+	popupView[data-type="AI"][data-color="녹두"] [data-popup-btn="popupClose"],
+	popupView[data-type="설명"][data-color="녹두"] [data-popup-btn="popupClose"],
+	popupView[data-type="tip"][data-color="녹두"] [data-popup-btn="popupClose"]{background-image:url('../com/images/btns/팝업-설명 닫기-녹두.png');}
+	popupView[data-type="AI"][data-color="녹색"] [data-popup-btn="popupClose"],
+	popupView[data-type="설명"][data-color="녹색"] [data-popup-btn="popupClose"],
+	popupView[data-type="tip"][data-color="녹색"] [data-popup-btn="popupClose"]{background-image:url('../com/images/btns/팝업-설명 닫기-녹색.png');}
+	popupView[data-type="AI"][data-color="파랑"] [data-popup-btn="popupClose"],
+	popupView[data-type="설명"][data-color="파랑"] [data-popup-btn="popupClose"],
+	popupView[data-type="tip"][data-color="파랑"] [data-popup-btn="popupClose"]{background-image:url('../com/images/btns/팝업-설명 닫기-파랑.png');}
+	popupView[data-type="AI"][data-color="진파랑"] [data-popup-btn="popupClose"],
+	popupView[data-type="설명"][data-color="진파랑"] [data-popup-btn="popupClose"],
+	popupView[data-type="tip"][data-color="진파랑"] [data-popup-btn="popupClose"]{background-image:url('../com/images/btns/팝업-설명 닫기-진파랑.png');}
+	
+	
+	popupView[data-type="AI"] .popupBody,
+	popupView[data-type="설명"] .popupBody,
+	popupView[data-type="tip"] .popupBody{
+		padding:2.0rem 10.0rem;
+	}
+	popupView[data-type="AI"] .popupBody [data-icon="AI로봇"]{
+		content:'';
+		font-size:0;
+		width:17.3rem; height:17.9rem;
+		position:absolute;
+		right:4.0rem; bottom:3.5rem;
+		background-image:url('../com/images/gifs/팝업-AI-캐릭터.gif');
+	}
+	popupView[data-type="설명"] .popupBody:after{
+		content:'';
+		width:22.3rem; height:22.9rem;
+		position:absolute;
+		left:-7.4rem; bottom:-3.0rem;
+		background-image:url('../com/images/chars/팝업-캐릭터.png');
+	}
+	popupView[data-type="tip"] .popupBody:after{
+		content:'';
+		width:18.9rem; height:18.9rem;
+		position:absolute;
+		left:-2.4rem; bottom:-5.0rem;
+		background-image:url('../com/images/chars/팝업-tip.png');
+	}
+	
+	popupView[data-type="AI"] .popupBody h2,
+	popupView[data-type="설명"] .popupBody h2,
+	popupView[data-type="tip"] .popupBody h2{
+		font-family:'Nanum';
+		font-size:4.3rem;
+		font-weight:600;
+		line-height:6.0rem;
+	}
+
+popupView[data-type="AI"][data-size="small"]>div,
+popupView[data-type="설명"][data-size="small"]>div,
+popupView[data-type="tip"][data-size="small"]>div{
+	height:45.0rem;
+}
+	popupView[data-type="AI"][data-size="small"] [data-popup-btn="popupClose"],
+	popupView[data-type="설명"][data-size="small"] [data-popup-btn="popupClose"],
+	popupView[data-type="tip"][data-size="small"] [data-popup-btn="popupClose"]{
+		right:5.5rem; top:-2.0rem;
+	}
+popupView[data-type="AI"][data-size="big"]>div,
+popupView[data-type="설명"][data-size="big"]>div,
+popupView[data-type="tip"][data-size="big"]>div{
+	width:116.0rem; 
+}
+	popupView[data-type="AI"][data-size="big"] [data-popup-btn="popupClose"],
+	popupView[data-type="설명"][data-size="big"] [data-popup-btn="popupClose"],
+	popupView[data-type="tip"][data-size="big"] [data-popup-btn="popupClose"]{
+		right:7.3rem; top:-1.0rem;
+	}
+
+popupView[data-type="AI"][data-size="full"]>div,
+popupView[data-type="설명"][data-size="full"]>div,
+popupView[data-type="tip"][data-size="full"]>div{
+	width:120.0rem; 
+}
+	popupView[data-type="AI"][data-size="full"] [data-popup-btn="popupClose"],
+	popupView[data-type="설명"][data-size="full"] [data-popup-btn="popupClose"],
+	popupView[data-type="tip"][data-size="full"] [data-popup-btn="popupClose"]{
+		right:7.3rem; top:-1.0rem;
+	}
+		
+popupView[data-type="AI"] .popupBody>slide,
+popupView[data-type="설명"] .popupBody>slide,
+popupView[data-type="tip"] .popupBody>slide{
+	height:41.5rem;
+}
+popupView[data-type="AI"] .popupBody>slide header,
+popupView[data-type="설명"] .popupBody>slide header,
+popupView[data-type="tip"] .popupBody>slide header{
+	position:absolute; height:0;
+	left:0; top:-10.0rem;
+}
+
+/**================================
+ * 슬라이드
+ =================================**/
+slide{
+	width:100%; height:100%;
+}
+	slideIndex{
+		bottom:2.0rem;
+	}
+	slideIndex [data-slide-btn]{
+		width:2.4rem; height:2.2rem;
+	}
+		slideIndex [data-slide-btn="prev"]{
+			background-image:url('../com/images/btns/슬라이드-l.png');
+		}
+		slideIndex [data-slide-btn="next"]{
+			background-image:url('../com/images/btns/슬라이드-r.png');
+		}
+	slideIndex a{
+		width:1.6rem; height:1.6rem; 
+		margin:0.3rem 0.4rem;
+		box-shadow:none; border:0; 
+		background-color:#c8c8c8;
+	}
+		slideIndex a.on{
+			width:3.2rem;
+			background-color:#3a6aba;
+		}
+	slideBody{
+		height:calc(100% - 6.0rem);
+	}
+	
+/**================================
+ * 슬라이드
+ =================================**/
+tab{
+	width:100%; height:100%;
+}
+	
+/**================================
+ * 퀴즈
+ =================================**/
+quiz{width:100%; height:100%;}
+quizBtn{
+	position:absolute;
+	z-index:10;
+	width:11.6rem; height:3.1rem;
+	bottom:-3.6rem; right:10.0rem;
+}
+slide quizBtn{
+	bottom:-9.6rem;
+}
+	quizBtn[data-type="answerReset"]{
+		background-image:url('../com/images/btns/퀴즈-예시답안.png');
+	}
+	quizBtn[data-type="answerReset"].on{
+		background-image:url('../com/images/btns/퀴즈-다시하기.png');
+	}
+	quizBtn[data-type="exReset"]{
+		background-image:url('../com/images/btns/퀴즈-예시답안.png');
+	}
+	quizBtn[data-type="exReset"].on{
+		background-image:url('../com/images/btns/퀴즈-다시하기.png');
+	}
+[data-quick-btn]{
+	position:relative;
+	z-index:1;
+	font-size:0;
+	width:5.4rem; height:5.4rem;
+}	
+	[data-quick-btn="answerReset"]{
+		background-image:url('../com/images/btns/퀴즈퀵-열쇠.png');
+	}
+	[data-quick-btn="answerReset"].switch{
+		background-image:url('../com/images/btns/퀴즈퀵-다시하기.png');
+	}
+
+
+/**================================*/
+	
+[data-response-type="show"] itemBody button[data-id]{
+	position:relative;
+	z-index:1;
+	font-size:0;
+	width:5.4rem; height:5.4rem;
+	background-image:url('../com/images/btns/퀴즈퀵-열쇠.png');
+}
+[data-response-type="show"] itemBody button[data-id].on{
+	display:none;
+}
+[data-response-type="show"] [data-hide-target]{
+	font-family:'Nanum';
+	font-weight:500;
+}
+/**================================*/
+	
+[data-response-type="essay"][data-type="feedback"] assessFeedback>*, 
+[data-response-type="input"][data-type="feedback"] assessFeedback>*{
+	color:#0026b3;
+	font-family:'Nanum';
+}	
+
+[data-response-type="input"][data-state="answer"] itemBody input, 
+[data-response-type="input"][data-state="answer"] itemBody textarea, 
+[data-response-type="essay"][data-state="answer"] itemBody textarea{
+	color:#0026b3;
+}
+[data-response-type="input"] itemBody,
+[data-response-type="input"] itemBody textarea{
+	position:relative; z-index:0;
+	width:100%; height:100%;
+}
+/**================================*/
+[data-response-type="word"] word>span{
+	background-color:#f1f6fe;
+	border: 0.2rem solid #a5bde6;
+	border-radius: 0.8rem;
+	margin: -0.2rem 0;
+	
+	font-family:'Jamsil';
+	color:#002b6c;
+	padding:1.2rem 2.0rem;
+}
+[data-response-type="word"] word.correct>span{
+	color:#002b6c;
+}
+
+/**================================
+ * 도움말
+ =================================**/
+choiceItem[data-design="채크박스"]{
+	position:relative;
+	display:inline-block;
+	width:32px; height:32px;
+	background-size:100% 100%;
+	background-image:url('../com/images/bgs/채크 박스.png');
+	font-size:0; line-height:0;
+}
+choiceItem[data-design="채크박스"].on:after,
+choiceItem[data-design="채크박스"].correct:after{
+	content:'';
+	width:24px; height:20px;
+	position:absolute;
+	left:50%; top:50%;
+	transform:translate(-50%,-50%);
+}
+	choiceItem[data-design="채크박스"].on:after{background-image:url('../com/images/icons/채크.png');}
+	choiceItem[data-design="채크박스"].correct:after{background-image:url('../com/images/icons/채크-정답.png') !important;}
+	choiceItem[data-design="채크박스"].on.correct:after{background-image:url('../com/images/icons/채크-정답.png');}
+	choiceItem[data-design="채크박스"].on.disabled:after{background-image:none;}
+/**================================
+ * 도움말
+ =================================**/
+[data-design="도움말"]{
+	position:absolute;
+}
+	[data-design="도움말"] tooltip{
+		font-size:0;
+		display:inline-block;
+		width:10.0rem; height:11.7rem;
+		background-image:url('../com/images/chars/도움말-캐릭터.png');
+	}
+	
+	[data-design="도움말"] tooltipTarget{
+		font-family:'Elec';
+		font-size:2.6rem;
+		line-height:3.4rem;
+		text-align:center;
+		color:#fff;
+		width:31.0rem; height:21.5rem;
+		background-image:url('../com/images/bgs/말풍선.png');
+		
+		position:absolute;
+		left:7.0rem; bottom:7.0rem;
+	}
+	[data-design="도움말"] tooltipTarget>div{
+		width:100%; height:100%;
+		display:-webkit-box;
+		display:-moz-box;
+		display:-ms-flexbox;
+		display:flex;
+		-webkit-box-pack:center;
+		-moz-box-justify-content:center;
+		-ms-flex-pack:center;
+		justify-content:center;
+		-webkit-box-align:center;
+		-moz-align-items:center;
+		-ms-flex-align:center;
+		align-items:center;
+	}
+		[data-design="도움말"] tooltipTarget>*{
+			position:relative;
+			left:-0.5rem; top:-1.5rem;
+		}
+/**================================
+ * 정리하기
+ =================================**/
+[data-design="정리하기"]{
+	width:100%; height:100%;
+	display:-webkit-box;
+	display:-moz-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-pack:center;
+	-moz-box-justify-content:center;
+	-ms-flex-pack:center;
+	justify-content:center;
+	-webkit-box-align:center;
+	-moz-align-items:center;
+	-ms-flex-align:center;
+	align-items:center;
+	
+	-webkit-box-orient: vertical;
+	-moz-flex-direction:column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+[data-design="정리하기"] h2{
+	position:absolute; top:0;
+	line-height:6.3rem;
+}
+[data-design="정리하기"] choice{
+	background-color:#f3f3f3;
+	border-radius:2.0rem;
+	width:71.1rem; height:17.2rem;
+	text-align:center;
+	
+	position:absolute;
+	bottom:1.0rem;
+}
+[data-design="정리하기"] choice:after{
+	content:'';
+	width:55.4rem; height:1.4rem;
+	background-image: url('../com/images/bgs/정리하기-line.png');
+	position:absolute;
+	left:8.0rem; bottom:5.4rem;
+}
+	[data-design="정리하기"] choice choiceItem{
+		display:inline-block;
+		width:8.3rem; height:8.4rem;
+		margin-top:1.2rem;
+	}
+		[data-design="정리하기"] choice choiceItem:nth-child(1){
+			background-image: url('../com/images/btns/정리하기-부족.png');
+		}
+		[data-design="정리하기"] choice choiceItem:nth-child(2){
+			background-image: url('../com/images/btns/정리하기-보통.png');
+		}
+		[data-design="정리하기"] choice choiceItem:nth-child(3){
+			background-image: url('../com/images/btns/정리하기-잘함.png');
+		}
+		[data-design="정리하기"] choice choiceItem+choiceItem{
+			margin-left:17.6rem;
+		}
+		[data-design="정리하기"] choice choiceItem>span{
+			position:absolute;
+			display:block;
+			width:100%;
+			bottom:-6.0rem;
+			font-family:'Elec';
+			font-size:2.9rem; color:#413d3d;
+		}
+/**================================
+ * tab
+ =================================**/
+#mainView[data-design="tab"]>header{
+	position:absolute; left:0; top:0;
+}
+	#mainView[data-design="tab"]>section>tab>tabIndex{
+		height:8.5rem; line-height:0;
+	}
+	#mainView[data-design="tab"]>section>tab>tabIndex a{
+		width:4.2rem; height:4.2rem;
+		background-color:#b3b3b3;
+		font-size:2.3rem;
+		line-height:4.4rem;
+		text-align:center;
+		border-radius:100%;
+		color:#fff;
+	}
+		#mainView[data-design="tab"]>section>tab>tabIndex ul{
+			margin-top:3.0rem;
+			float:right;
+		}
+		#mainView[data-design="tab"]>section>tab>tabIndex li+li{
+			margin-left:0.8rem;
+		}
+	#mainView[data-design="tab"]>section>tab>tabIndex a.on{
+		background-color:#694dde;
+	}
+	
+#mainView[data-design="tab"]>section>tab>tabBody{
+	height:calc(100% - 8.5rem);
+}
+
+
+/**================================
+ * 동영상
+ =================================**/
+
+#mainView[data-design="주의해요!"]>section>slide>slidebody{
+	width:72.0rem;
+}
+	#mainView[data-design="주의해요!"]>section>slide>slidebody:after{
+		content:'';
+		position:absolute;
+		right:-42.0rem; top:0.0rem;
+		width:30.0rem; height:33.0rem;
+		background-image: url('../com/images/gifs/주의해요-캐릭터.gif');
+	}
+
+#mainView[data-design="주의해요!"] slideItem>section{
+	font-family:'Nanum';
+	font-size:3.0rem;
+	font-weight:500;
+	line-height:4.4rem;
+	margin-left:2.0rem;
+}
+#mainView[data-design="주의해요!"] slideItem>section+section{
+	margin-top:3.0rem;
+}
+#mainView[data-design="주의해요!"] slideItem>section h2{
+	font-family:'Elec';
+	font-size:4.5rem;
+	line-height:6.5rem;
+}	
+	
+/**================================
+ * 생각 두드리기
+ =================================**/
+#mainView[data-design="생각 두드리기"]>header{
+	position:absolute;
+	left:5.0rem; top:5.0rem;
+}
+#mainView[data-design="생각 두드리기"]>section{
+	padding:0;
+}
+#mainView[data-design="생각 두드리기"]>section:after{
+	content:'';
+	width:13.3rem; height:15.5rem;
+	background-image:url('../com/images/chars/동영상-캐릭터.png');
+	position:absolute;
+	left:8.0rem; bottom:3.5rem;
+}
+	#mainView[data-design="생각 두드리기"] media{
+		width:96.0rem; height:54.0rem;
+		box-shadow: -0.69px 9.93px 14.25px 0.75px rgba(183, 183, 183, 0.52);
+		border-radius:20px;
+		left:27.0rem; top:4.8rem;
+	}
+	#mainView[data-design="생각 두드리기"] media[data-state="ready"] mediaControls{
+		bottom:-20.0rem !important;
+	}
+	#mainView[data-design="생각 두드리기"] media[data-state="play"] [data-media-btn="simple"],
+	#mainView[data-design="생각 두드리기"] media[data-state="pause"] [data-media-btn="simple"],
+	#mainView[data-design="생각 두드리기"] media[data-state="ended"] [data-media-btn="simple"]{
+		display:none !important;
+	}
+
+/**================================
+ * 동영상
+ =================================**/
+
+#mainView[data-design="동영상"]>section{
+	text-align:center;
+}
+	#mainView[data-design="동영상"] media{
+		text-align:left;
+		width:85.3rem; height:48.0rem;
+		box-shadow: -0.69px 9.93px 14.25px 0.75px rgba(183, 183, 183, 0.52);
+		border-radius:20px;
+	}
+	#mainView[data-design="동영상"] media[data-state="ready"] mediaControls{
+		bottom:-20.0rem !important;
+	}
+	#mainView[data-design="동영상"] media[data-state="play"] [data-media-btn="simple"],
+	#mainView[data-design="동영상"] media[data-state="pause"] [data-media-btn="simple"],
+	#mainView[data-design="동영상"] media[data-state="ended"] [data-media-btn="simple"]{
+		display:none !important;
+	}
+
+/**================================
+ * 오디오
+ =================================**/
+/**
+ * 	오디오 심플 버튼 설정
+ */
+media[data-mode="audio"][data-controls="simple"] [data-media-btn="simple-audio"] {
+    width:6.0rem;height:6.4rem;
+    background-image: url('../com/images/btns/사운드-재생.png');
+}
+media[data-mode="audio"][data-controls="simple"][data-state="play"] [data-media-btn="simple-audio"]{
+	background-image: url('../com/images/btns/사운드-정지.png');
+}
+
+
+/**================================
+ * 공통
+ =================================**/
+#mainView{
+	display:-webkit-box;
+	display:-moz-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-pack:center;
+	-moz-box-justify-content:center;
+	-ms-flex-pack:center;
+	justify-content:center;
+	-webkit-box-align:center;
+	-moz-align-items:center;
+	-ms-flex-align:center;
+	align-items:center;
+	
+	-webkit-box-orient: vertical;
+	-moz-flex-direction:column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+	#mainView>header{
+		width:100%;
+		min-height:80px;
+	}
+	#mainView>section{
+		-webkit-box-flex:1;
+		-ms-flex:1;
+		flex-grow:1;
+		flex:1;
+		
+		width:100%; height:100%;
+		padding:0 5.0rem;
+	}
+/**================================
+ * 공통 디자인 요소
+ =================================**/
+
+.center,
+[data-design="center"]{
+	display:-webkit-box;
+	display:-moz-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-pack:center;
+	-moz-box-justify-content:center;
+	-ms-flex-pack:center;
+	justify-content:center;
+	-webkit-box-align:center;
+	-moz-align-items:center;
+	-ms-flex-align:center;
+	align-items:center;
+}
+
+.center-y,
+[data-design="center-y"]{
+	display:-webkit-box;
+	display:-moz-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-pack:center;
+	-moz-box-justify-content:center;
+	-ms-flex-pack:center;
+	justify-content:center;
+	-webkit-box-align:center;
+	-moz-align-items:center;
+	-ms-flex-align:center;
+	align-items:center;
+	
+	-webkit-box-orient: vertical;
+	-moz-flex-direction:column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+
+/**================================
+ * 공통 요소
+ =================================**/
+
+b{
+	font-weight:600;
+	color:#a61d00;
+}
+.full{width:100%; height:100%;}
+
+.scroll{
+	width:100%; height:100%;
+	overflow-x:hidden; overflow-y:auto;
+}
+
+img.line{
+	border:0.5rem solid #d3d3d3;
+	border-radius:1.5rem;
+}
+
+textarea{
+	padding-right:1.0rem;
+}
+
+/**================================
+ * 공통 요소
+ =================================**/
+/**
+ * 	html 화면
+ */
+container{
+	display:block;
+	position:absolute; left:0; top:0;
+	width:128.0rem; height:72.0rem;
+	overflow:hidden !important;
+}
+/**
+ * 	컨텐츠 화면
+ */
+main{
+	display:block;
+	position:absolute; left:0; top:0;
+	position:relative;
+	width:100%; height:100%;
+}
+	main>#mainView{
+		position:absolute; left:0; top:4.5rem;
+		width:100%; height:63.5rem;
+	}
+	
+
+/**================================
+ * 공통 요소 - 비디오
+ =================================**/
+media mediaControls{
+	height:5.0rem;
+	background-color:transparent;
+	background-image: url('../com/images/media/컨트롤러.png');
+}
+media mediaControls>[data-media-box]{
+	margin-top:0.5rem;
+}
+[data-media-btn="simple"]{
+	width:31.8rem; height:31.8rem;
+	background-image: url('../com/images/media/심플-버튼.png');
+}
+[data-media-btn="play"]{background-image: url('../com/images/media/재생.png');}
+[data-media-btn="pause"]{background-image: url('../com/images/media/일시정지.png');}
+[data-media-btn="stop"]{background-image: url('../com/images/media/정지.png');}
+[data-media-btn="track"]{background-image: url('../com/images/media/자막-d.png');}
+[data-media-btn="track"][data-val]{background-image: url('../com/images/media/자막.png');}
+[data-media-btn="full"]{background-image: url('../com/images/media/전체화면.png');}
+.fullscreen [data-media-btn="full"]{background-image: url('../com/images/media/작은화면.png');}
+[data-media-btn="volume"]{background-image: url('../com/images/media/스피커.png');}
+
+	
+	/* 자막 크기 조절*/
+	video::cue {
+		font-size: 20px;
+		line-height: 30px;
+		padding:0 30px;
+		margin:0;
+	}
+	video::-webkit-media-text-track-display {
+		padding:0 30px;
+		transform:translateY(-20px);
+	}
+	media.small video::-webkit-media-text-track-display{
+		transform:translateY(-40px);
+	}
+	media.fullscreen video::cue {
+		font-size: 55px;
+		line-height: 75px;
+	}
+	media.fullscreen video::-webkit-media-text-track-display {
+		padding:0 60px;
+		padding-bottom:50px;
+		transform:translateY(-30px);
+	}

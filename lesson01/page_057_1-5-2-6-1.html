@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!--메타 데이타-->
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta name="viewport" content="width=1280, height=720">
+  	<!--CSS-->
+	<link rel="stylesheet" type="text/css" href="./src/css/module.fonts.css" />
+	<link rel="stylesheet" type="text/css" href="./src/css/module.skill.css" />
+	<link rel="stylesheet" type="text/css" href="./src/css/popup.nav.css" />
+	<link rel="stylesheet" type="text/css" href="./src/css/popup.view.css" />
+	<link rel="stylesheet" type="text/css" href="./src/css/screen.css" />
+	<!--DATAS-->
+	<script type="text/javascript" src="src/datas/datas.index.js" ></script>
+    <!--MODULE-->
+    <script type="text/javascript" src="../../../../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../../../../js/binder_web.min.js"></script>
+	<script type="text/javascript" src="src/js/module.fn.js" ></script>
+	<script type="text/javascript" src="src/js/popup.navi.js" ></script>
+	<script type="text/javascript" src="src/js/popup.view.js" ></script>
+</head>
+
+<!--컨테이너 시작-->
+<body><div><container>
+
+	<!--화면 뷰 영역 시작--><!--기본 디자인 설정--->
+	<main><article id="mainView" data-design="tab">
+		<!--본문 내용--->
+		<section>
+			<tab>
+				<tabItem>
+					<quiz id="q1">
+                       
+                        <h1 data-subject="숫자">
+                            <span>1</span>
+                            <span>나의 평일과 주말의 평균 공부 시간과 휴식 시간을 적고 균형을 이루고 있는지 생각해 보자.</span>
+                        </h1>
+                        
+                        <div role="table" data-style="w:119.4rem h:30rem BG:images/page_057_1-5-2-6-1/bg-표.png mt:4rem">
+
+                            <div role="thead">
+                                <ul role="tr">
+                                    <li role="th"><span></span></li>
+                                    <li role="th"><span>공부 시간</span></li>
+                                    <li role="th"><span>휴식 시간</span></li>
+                                </ul>
+                            </div>
+
+                            <div role="tbody">
+
+                                <!--입력 퀴즈-->
+                                <assessmentItem 
+                                    data-response-type="input" 
+                                    data-type="feedback">
+
+                                    <itemBody>
+                                        <ul role="tr">
+                                            <li role="td">평일</li>
+                                            <li role="td"><input type="text" /></li>
+                                            <li role="td"><input type="text" /></li>
+                                        </ul>
+                                    </itemBody>
+
+                                    <assessFeedback>
+                                        <ul role="tr">
+                                            <li role="td">평일</li>
+                                            <li role="td">5시간(학교 공부시간 제외)</li>
+                                            <li role="td">1.5시간</li>
+                                        </ul>
+                                    </assessFeedback>
+
+                                    <button data-quick-btn="answerReset">정답 보기/다시하기</button>
+
+                                </assessmentItem>
+
+                                <!--입력 퀴즈-->
+                                <assessmentItem 
+                                    data-response-type="input" 
+                                    data-type="feedback">
+
+                                    <itemBody>
+                                        <ul role="tr">
+                                            <li role="td">주말</li>
+                                            <li role="td"><input type="text" /></li>
+                                            <li role="td"><input type="text" /></li>
+                                        </ul>
+                                    </itemBody>
+
+                                    <assessFeedback>
+                                        <ul role="tr">
+                                            <li role="td">주말</li>
+                                            <li role="td">8시간</li>
+                                            <li role="td">3시간</li>
+                                        </ul>
+                                    </assessFeedback>
+
+                                    <button data-quick-btn="answerReset">정답 보기/다시하기</button>
+
+                                </assessmentItem>
+                            </div>
+                        </div>
+
+                        <style>
+                            #q1 [role="thead"]{
+                                font-family:'Jamsil';
+                                font-size:2.8rem;
+                                font-weight:400;
+                                color:#ffffff;
+                                text-align:center;
+                            }
+                            #q1 [role="tbody"] ul>li:nth-child(1){
+                                font-family:'Nanum';
+                                font-size:2.8rem;
+                                font-weight:500;
+                                color:#969696;
+                            }
+                            #q1 [role="tbody"] ul>li{
+                                font-family:'Nanum';
+                                font-size:2.8rem;
+                                font-weight:500;
+                            }
+                            
+                            #q1 ul{
+                                display:table;
+                                clear:both;
+                            }
+                            #q1 ul>li{
+                                float:left;
+                                height:11.85rem;
+                                line-height:11.85rem;
+                                padding:0 1.0rem;
+                            }
+                            #q1 [role="thead"] ul>li{
+                                height:6.15rem;
+                                line-height:6.15rem;
+                            }
+                                #q1 ul>li:nth-child(1){
+                                    width:14.8rem;
+                                    text-align:center;
+                                }
+                                #q1 ul>li:nth-child(2){
+                                    width:52.25rem;
+                                    text-align:center;
+                                }
+                                #q1 ul>li:nth-child(3){
+                                    width:52.25rem;
+                                    text-align:center;
+                                }
+                            #q1 ul>li>input{
+                                width:80%;
+                            }
+
+                            #q1 [data-quick-btn]{
+                                position:absolute;
+                                right:0.5rem; top:3.3rem;
+                            }
+
+                        </style>
+
+                        <!--정답 버튼-->
+                        <quizBtn data-type="exReset">
+                            <span>정답 보기/다시하기</span>
+                        </quizBtn>
+                    </quiz>
+				</tabItem>
+				
+				
+
+				<tabItem>
+					<quiz id="q2">
+						<h1 data-subject="숫자">
+							<span>2</span>
+							<span>나에게 자유 시간이 생긴다면 무엇을 하고 싶은지 다섯 글자로 나타내 보자.</span>
+						</h1>
+
+						<div data-style="center">
+							<div data-style="P:r w:100rem h:9.3rem BG:images/page_057_1-5-2-6-1/bg.png mt:12rem">
+                               
+                                <p data-style="F:Nanum Fs:3.0rem Fw:500 P:a x:55rem y:3rem">
+                                    <span data-icon="예" data-style="t:0.4rem">예</span> <span> 꿀잠 잘 거야, 한강 나들이</span>
+                                </p>
+								
+
+								<!--입력 퀴즈-->
+                                <assessmentItem 
+                                    data-response-type="input" 
+                                    data-type="feedback" data-style="F:Nanum Fs:3.8rem Fw:500 P:a x:22.5rem y:2.9rem w:50rem">
+
+                                    <itemBody>
+                                        <ul>
+                                            <li><input type="text" placeholder="" maxlength="1" data-style="w:3.4rem"/></li>
+                                            <li><input type="text" placeholder="" maxlength="1" data-style="w:3.4rem"/></li>
+                                            <li><input type="text" placeholder="" maxlength="1" data-style="w:3.4rem"/></li>
+                                            <li><input type="text" placeholder="" maxlength="1" data-style="w:3.4rem"/></li>
+                                            <li><input type="text" placeholder="" maxlength="1" data-style="w:3.4rem"/></li>
+                                        </ul>
+                                    </itemBody>
+
+                                    <assessFeedback>
+                                        <span data-style="w:3.4rem">친</span>
+                                        <span data-style="w:3.4rem">구</span>
+                                        <span data-style="w:3.4rem">랑</span>
+                                        <span data-style="w:3.4rem">농</span>
+                                        <span data-style="w:3.4rem">구</span>
+                                    </assessFeedback>
+
+                                    <button data-quick-btn="answerReset" data-style="P:a x:-8rem y:-0.8rem">정답 보기/다시하기</button>
+
+                                </assessmentItem>
+							</div>
+						</div>
+						
+						<style>
+                            #q2 ul>li{
+                                float:left;
+                                margin-right: 2.85rem;
+                                text-align: center;
+                            }
+                            
+                            #q2 assessFeedback span{
+                                float:left;
+                                margin-right: 2.85rem;
+                                text-align: center;
+                            }
+                        </style>
+						<quizBtn data-type="exReset">
+							<span>정답 보기/다시하기</span>
+						</quizBtn>
+					</quiz>
+				</tabItem>
+			</tab>
+		</section>
+		
+	<!--화면 뷰 영역 끝-->	
+	</article></main>
+	
+<!--컨테이너 끝-->
+</container></div></body></html>

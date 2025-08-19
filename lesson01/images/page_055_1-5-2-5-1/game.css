@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+
+/**================================
+ * @date: 2023-11-13
+ * @description: 객체 함수 정의
+ * @copyright: 김동근
+ * @version:1.0
+ =================================**/
+
+
+#game-1{
+	width:100%; height:100%;
+}
+
+/*게임 배경*/
+#game-1 .game-bg,
+#game-1 .game-bg>video{
+	position:absolute; left:0px; top:0px;
+	width:100%; height:100%;
+}
+
+/*게임 배경*/
+#game-1 .game-start{
+	display:none;
+	position:absolute; left:0px; top:0px;
+	width:100%; height:100%;
+}
+	#game-1 .game-start .info{
+		position:absolute;
+		right:34px; bottom:26px;
+	}
+	#game-1 .game-start .info>.balloon{
+		width:215px; height:203px;
+		background-image:url('bgs/말풍선1.png');
+	}
+		#game-1 .game-start .info>.balloon>p{
+			font-size:23px;
+			text-align:center;
+			line-height:36px;
+			color:#fff;
+			position:relative;
+			top:21px;
+		}
+		
+	#game-1 .game-start button[data-type="pick"]{
+		width:268px; height:94px;
+		font-size:0px;
+		background-image:url('btns/카드뽑기.png');
+		position:absolute;
+		left:510px; bottom:45px;
+	}	
+		
+/*게임 시작일 때 디자인 변경*/
+#game-1.result .game-start .info>.balloon{
+	background-image:url('bgs/말풍선2.png');
+}
+#game-1.result .game-start button[data-type="pick"]{
+	background-image:url('btns/다시하기.png');
+}
+
+/*게임 펭귄 크기*/
+#ani{
+    width:180; height:180px;
+}
+
+/*게임 배경*/
+#game-1 .game-result{
+	position:absolute; left:0px; top:0px;
+	display:none;
+	width:100%; height:0px;
+}
+	#game-1 .game-result .game-card{
+		position:absolute; left:350px; top:43px;
+		width:580px; height:430px;
+		background-image:url('cards/카드 앞.png');
+	}
+		#game-1 .game-result .game-card>h2{
+			color:#fff;
+			font-size:40px;
+			font-weight:600;
+			width:280px; height:40px; 
+			line-height:40px;
+			position:absolute;
+			left:150px; top:49px;
+			text-align:center;
+		}
+		#game-1 .game-result .game-card>div{
+			margin-left:25px; top:20px;
+		}
+			
+			#game-1 .game-result .game-card>div>img{
+				position:absolute;
+				left:178px; top:85px;
+				width:230px; height:230px;
+			}
+			#game-1 .game-result .game-card>div>div{
+				position:absolute;
+				left:33px; bottom:45px;
+				width:88%;
+				font-size:30px; line-height:42px;
+				letter-spacing:-1px;
+				
+			}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!--메타 데이타-->
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta name="viewport" content="width=1280, height=720">
+  	<!--CSS-->
+	<link rel="stylesheet" type="text/css" href="./src/css/module.fonts.css" />
+	<link rel="stylesheet" type="text/css" href="./src/css/module.skill.css" />
+	<link rel="stylesheet" type="text/css" href="./src/css/popup.nav.css" />
+	<link rel="stylesheet" type="text/css" href="./src/css/popup.view.css" />
+	<link rel="stylesheet" type="text/css" href="./src/css/screen.css" />
+	<!--DATAS-->
+	<script type="text/javascript" src="src/datas/datas.index.js" ></script>
+    <!--MODULE-->
+    <script type="text/javascript" src="../../../../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../../../../js/binder_web.min.js"></script>
+	<script type="text/javascript" src="src/js/module.fn.js" ></script>
+	<script type="text/javascript" src="src/js/popup.navi.js" ></script>
+	<script type="text/javascript" src="src/js/popup.view.js" ></script>
+</head>
+
+<!--컨테이너 시작-->
+<body><div><container>
+
+	<!--화면 뷰 영역 시작--><!--기본 디자인 설정--->
+	<main><article id="mainView" data-design="">
+			
+		<header>
+			<h1 data-subject="연필">
+				<span>과학자의 직업 윤리에 대한 나의 생각을 적고, 나의 희망 직업에서 발생할 수 있는 윤리적 갈등 상황에 대해 생각해 보자.</span>
+			</h1>
+		</header>
+		<!--본문 내용--->
+		<section>
+			<quiz>
+				<!--입력 퀴즈-->
+				<assessmentItem 
+					data-box="회색"
+					data-response-type="input"
+					data-type="feedback"
+					data-style="h:35.0rem ml:3.5rem F:Nanum Fs:3.3rem Fw:500 LH:6.0rem">
+					
+					<itemBody>
+						<textarea data-style=""></textarea>
+					</itemBody>
+					
+					<assessFeedback>
+						<p>과학자가 인류의 발전을 위해 과학 기술을 연구해야 하는 것은 맞지만, 인류에 미칠 영향을 고려하여 신중하게 결정해야 한다고 생각한다. 나의 희망 직업인 경찰은 항상 공정성을 가지고 수사해야 하지만 친구나 가족과 관련된 사건이 발생했을 때 개인의 감정과 공정한 수사를 해야 하는 경찰의 역할 사이에서 갈등이 나타날 수 있을 것 같다.</p>
+					</assessFeedback>
+					
+					<button data-quick-btn="answerReset" data-style="P:a r:1.0rem b:1.0rem">정답 보기/다시하기</button>
+					
+				</assessmentItem>
+				
+				<quizBtn data-type="exReset">
+					<span>정답 보기/다시하기</span>
+				</quizBtn>
+			</quiz>
+		</section>
+		
+	<!--화면 뷰 영역 끝-->	
+	</article></main>
+	
+<!--컨테이너 끝-->
+</container></div></body></html>

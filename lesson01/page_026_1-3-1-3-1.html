@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!--메타 데이타-->
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta name="viewport" content="width=1280, height=720">
+  	<!--CSS-->
+	<link rel="stylesheet" type="text/css" href="./src/css/module.fonts.css" />
+	<link rel="stylesheet" type="text/css" href="./src/css/module.skill.css" />
+	<link rel="stylesheet" type="text/css" href="./src/css/popup.nav.css" />
+	<link rel="stylesheet" type="text/css" href="./src/css/popup.view.css" />
+	<link rel="stylesheet" type="text/css" href="./src/css/screen.css" />
+	<!--DATAS-->
+	<script type="text/javascript" src="src/datas/datas.index.js" ></script>
+    <!--MODULE-->
+    <script type="text/javascript" src="../../../../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../../../../js/binder_web.min.js"></script>
+	<script type="text/javascript" src="src/js/module.fn.js" ></script>
+	<script type="text/javascript" src="src/js/popup.navi.js" ></script>
+	<script type="text/javascript" src="src/js/popup.view.js" ></script>
+</head>
+
+<!--컨테이너 시작-->
+<body><div><container>
+
+	<!--화면 뷰 영역 시작--><!--기본 디자인 설정--->
+	<main><article id="mainView" data-design="tab">
+		<!--본문 내용--->
+		<section>
+			<tab>
+				<tabItem>
+					<quiz id="q1" data-style="P:a x:0 y:0">
+						
+						<h1 data-subject="숫자">
+							<span>1</span>
+							<span>문항별로 점수를 매기고, 유형별로 점수를 합산하여 정리해 보자.</span>
+						</h1>
+						
+						<div data-style="center">
+							<div data-style="P:r O:a w:117rem h:460">
+								
+								<div data-style="Ta:c LH:0">
+									<ul>
+										<li>매우 그렇다: 5점</li>
+										<li>그렇다: 4점</li>
+										<li>보통이다: 3점</li>
+										<li>그렇지 않다: 2점</li>
+										<li>전혀 그렇지 않다: 1점</li>
+									</ul>
+									<style>
+										#q1 ul{
+											display:inline-block;
+											font-family:'Jamsil';
+											font-size:2.1rem;
+											line-height:4.2rem;
+											letter-spacing:-0.1rem;
+											width:86.5rem; height:4.0rem;
+											background-image: url('images/page_026_1-3-1-3-1/bg-점수표기방법.png');
+											text-align:center;
+										}
+											#q1 ul>li{
+												display:inline-block;
+											}
+											#q1 ul>li+li{
+												margin-left:4rem;
+											}
+									</style>
+								</div>
+								
+								
+								<table data-style="mt:0.5rem BG:images/page_026_1-3-1-3-1/bg-표-1.png">
+									<thead>
+										<tr>
+											<th>직업 적성 영역</th>
+											<th>문항</th>
+											<th>점수</th>
+											<th>유형별 총점</th>
+										</tr>
+									</thead>
+									<tbody>
+
+										<!-- 신체 · 운동 능력 -->
+										<tr>
+											<td rowspan="4">신체 · 운동 능력</td>
+											<td data-style="Ta:l">1. 몸의 균형을 잘 잡을 수 있다.</td>
+											<td>
+												<assessmentItem data-id="h-1" data-response-type="input" data-type="feedback" data-style="w:100%">
+								
+													<itemBody>
+														<input type="text"/>
+													</itemBody>
+													<assessFeedback data-style="Fw:500">
+														<p>3</p>
+													</assessFeedback>
+		
+													<button data-id="h-1" data-quick-btn="answerReset" data-style="P:a x:-10rem y:27.0rem">정답 보기/다시하기</button>
+												</assessmentItem>
+											</td>
+											<td rowspan="4">
+												<assessmentItem data-id="h-1" data-response-type="input" data-type="feedback" data-style="w:100%">
+								
+													<itemBody>
+														<input type="text"/>
+													</itemBody>
+													<assessFeedback data-style="Fw:500">
+														<p>8</p>
+													</assessFeedback>
+												</assessmentItem>
+											</td>
+										</tr>
+										
+										<tr>
+											<td data-style="Ta:l">2. 새로운 동작을 쉽게 배울 수 있다.</td>
+											<td>
+												<assessmentItem data-id="h-1" data-response-type="input" data-type="feedback" data-style="w:100%">
+								
+													<itemBody>
+														<input type="text"/>
+													</itemBody>
+													<assessFeedback data-style="Fw:500">
+														<p>2</p>
+													</assessFeedback>
+												</assessmentItem>
+											</td>
+										</tr>
+
+										<tr>
+											<td data-style="Ta:l">3. 몸을 구부리는 동작을 잘할 수 있다.</td>
+											<td>
+												<assessmentItem data-id="h-1" data-response-type="input" data-type="feedback" data-style="w:100%">
+								
+													<itemBody>
+														<input type="text"/>
+													</itemBody>
+													<assessFeedback data-style="Fw:500">
+														<p>1</p>
+													</assessFeedback>
+												</assessmentItem>
+											</td>
+										</tr>
+
+										<tr>
+											<td data-style="Ta:l">4. 여러 신체 부위를 동시에 움직이는 동작을 할 수 있다.</td>
+											<td>
+												<assessmentItem data-id="h-1" data-response-type="input" data-type="feedback" data-style="w:100%">
+								
+													<itemBody>
+														<input type="text"/>
+													</itemBody>
+													<assessFeedback data-style="Fw:500">
+														<p>2</p>
+													</assessFeedback>
+												</assessmentItem>
+											</td>
+										</tr>
+
+										<!-- 손 재능 -->
+										<tr>
+											<td rowspan="4">손 재능</td>
+											<td data-style="Ta:l">5. 망치로 못을 박을 수 있다.</td>
+											<td>
+												<assessmentItem data-id="h-1" data-response-type="input" data-type="feedback" data-style="w:100%">
+								
+													<itemBody>
+														<input type="text"/>
+													</itemBody>
+													<assessFeedback data-style="Fw:500">
+														<p>4</p>
+													</assessFeedback>
+												</assessmentItem>
+											</td>
+											<td rowspan="4">
+												<assessmentItem data-id="h-1" data-response-type="input" data-type="feedback" data-style="w:100%">
+								
+													<itemBody>
+														<input type="text"/>
+													</itemBody>
+													<assessFeedback data-style="Fw:500">
+														<p>12</p>
+													</assessFeedback>
+												</assessmentItem>
+											</td>
+										</tr>
+										
+										<tr>
+											<td data-style="Ta:l">6. 요리 재료를 잘 손질할 수 있다.</td>
+											<td>
+												<assessmentItem data-id="h-1" data-response-type="input" data-type="feedback" data-style="w:100%">
+								
+													<itemBody>
+														<input type="text"/>
+													</itemBody>
+													<assessFeedback data-style="Fw:500">
+														<p>3</p>
+													</assessFeedback>
+												</assessmentItem>
+											</td>
+										</tr>
+
+										<tr>
+											<td data-style="Ta:l">7. 부품을 조립하여 완성품을 만들 수 있다.</td>
+											<td>
+												<assessmentItem data-id="h-1" data-response-type="input" data-type="feedback" data-style="w:100%">
+								
+													<itemBody>
+														<input type="text"/>
+													</itemBody>
+													<assessFeedback data-style="Fw:500">
+														<p>5</p>
+													</assessFeedback>
+												</assessmentItem>
+											</td>
+										</tr>
+
+										<tr>
+											<td data-style="Ta:l">8. 필요한 물건을 제작하여 사용할 수 있다.</td>
+											<td>
+												<assessmentItem data-id="h-1" data-response-type="input" data-type="feedback" data-style="w:100%">
+								
+													<itemBody>
+														<input type="text"/>
+													</itemBody>
+													<assessFeedback data-style="Fw:500">
+														<p>4</p>
+													</assessFeedback>
+												</assessmentItem>
+											</td>
+										</tr>
+
+										<!-- 공간 지각력 -->
+										<tr>
+											<td rowspan="4">공간 지각력</td>
+											<td data-style="Ta:l">9. 가 본 길을 설명할 수 있다.</td>
+											<td>
+												<assessmentItem data-id="h-1" data-response-type="input" data-type="feedback" data-style="w:100%">
+								
+													<itemBody>
+														<input type="text"/>
+													</itemBody>
+													<assessFeedback data-style="Fw:500">
+														<p>3</p>
+													</assessFeedback>
+												</assessmentItem>
+											</td>
+											<td rowspan="4">
+												<assessmentItem data-id="h-1" data-response-type="input" data-type="feedback" data-style="w:100%">
+								
+													<itemBody>
+														<input type="text"/>
+													</itemBody>
+													<assessFeedback data-style="Fw:500">
+														<p>17</p>
+													</assessFeedback>
+												</assessmentItem>
+											</td>
+										</tr>
+										
+										<tr>
+											<td data-style="Ta:l">10. 그림 퍼즐을 잘 맞출 수 있다.</td>
+											<td>
+												<assessmentItem data-id="h-1" data-response-type="input" data-type="feedback" data-style="w:100%">
+								
+													<itemBody>
+														<input type="text"/>
+													</itemBody>
+													<assessFeedback data-style="Fw:500">
+														<p>5</p>
+													</assessFeedback>
+												</assessmentItem>
+											</td>
+										</tr>
+
+										<tr>
+											<td data-style="Ta:l">11. 입체 도형을 보고 전개도를 떠올릴 수 있다.</td>
+											<td>
+												<assessmentItem data-id="h-1" data-response-type="input" data-type="feedback" data-style="w:100%">
+								
+													<itemBody>
+														<input type="text"/>
+													</itemBody>
+													<assessFeedback data-style="Fw:500">
+														<p>5</p>
+													</assessFeedback>
+												</assessmentItem>
+											</td>
+										</tr>
+
+										<tr>
+											<td data-style="Ta:l">12. 입체 도형의 보이지 않는 부분도 파악할 수 있다.</td>
+											<td>
+												<assessmentItem data-id="h-1" data-response-type="input" data-type="feedback" data-style="w:100%">
+								
+													<itemBody>
+														<input type="text"/>
+													</itemBody>
+													<assessFeedback data-style="Fw:500">
+														<p>4</p>
+													</assessFeedback>
+												</assessmentItem>
+											</td>
+										</tr>
+
+										<!-- 음악 능력 -->
+										<tr>
+											<td rowspan="4">음악 능력</td>
+											<td data-style="Ta:l">13. 새로운 악기를 쉽게 익힐 수 있다.</td>
+											<td>
+												<assessmentItem data-id="h-1" data-response-type="input" data-type="feedback" data-style="w:100%">
+								
+													<itemBody>
+														<input type="text"/>
+													</itemBody>
+													<assessFeedback data-style="Fw:500">
+														<p>3</p>
+													</assessFeedback>
+												</assessmentItem>
+											</td>
+											<td rowspan="4">
+												<assessmentItem data-id="h-1" data-response-type="input" data-type="feedback" data-style="w:100%">
+								
+													<itemBody>
+														<input type="text"/>
+													</itemBody>
+													<assessFeedback data-style="Fw:500">
+														<p>11</p>
+													</assessFeedback>
+												</assessmentItem>
+											</td>
+										</tr>
+										
+										<tr>
+											<td data-style="Ta:l">14. 음을 듣고 음정을 구분할 수 있다.</td>
+											<td>
+												<assessmentItem data-id="h-1" data-response-type="input" data-type="feedback" data-style="w:100%">
+								
+													<itemBody>
+														<input type="text"/>
+													</itemBody>
+													<assessFeedback data-style="Fw:500">
+														<p>3</p>
+													</assessFeedback>
+												</assessmentItem>
+											</td>
+										</tr>
+
+										<tr>
+											<td data-style="Ta:l">15. 노래를 정확한 음정으로 부를 수 있다.</td>
+											<td>
+												<assessmentItem data-id="h-1" data-response-type="input" data-type="feedback" data-style="w:100%">
+								
+													<itemBody>
+														<input type="text"/>
+													</itemBody>
+													<assessFeedback data-style="Fw:500">
+														<p>3</p>
+													</assessFeedback>
+												</assessmentItem>
+											</td>
+										</tr>
+
+										<tr>
+											<td data-style="Ta:l">16. 처음 보는 악보를 보고 노래할 수 있다.</td>
+											<td>
+												<assessmentItem data-id="h-1" data-response-type="input" data-type="feedback" data-style="w:100%">
+								
+													<itemBody>
+														<input type="text"/>
+													</itemBody>
+													<assessFeedback data-style="Fw:500">
+														<p>2</p>
+													</assessFeedback>
+												</assessmentItem>
+											</td>
+										</tr>
+
+										<!-- 창의력 -->
+										<tr>
+											<td rowspan="4">창의력</td>
+											<td data-style="Ta:l">17. 새로운 것을 만들어 낼 수 있다.</td>
+											<td>
+												<assessmentItem data-id="h-1" data-response-type="input" data-type="feedback" data-style="w:100%">
+								
+													<itemBody>
+														<input type="text"/>
+													</itemBody>
+													<assessFeedback data-style="Fw:500">
+														<p>3</p>
+													</assessFeedback>
+												</assessmentItem>
+											</td>
+											<td rowspan="4">
+												<assessmentItem data-id="h-1" data-response-type="input" data-type="feedback" data-style="w:100%">
+								
+													<itemBody>
+														<input type="text"/>
+													</itemBody>
+													<assessFeedback data-style="Fw:500">
+														<p>13</p>
+													</assessFeedback>
+												</assessmentItem>
+											</td>
+										</tr>
+										
+										<tr>
+											<td data-style="Ta:l">18. 어떤 문제의 새로운 해결 방법을 생각할 수 있다.</td>
+											<td>
+												<assessmentItem data-id="h-1" data-response-type="input" data-type="feedback" data-style="w:100%">
+								
+													<itemBody>
+														<input type="text"/>
+													</itemBody>
+													<assessFeedback data-style="Fw:500">
+														<p>3</p>
+													</assessFeedback>
+												</assessmentItem>
+											</td>
+										</tr>
+
+										<tr>
+											<td data-style="Ta:l">19. 전에 해 보지 않았던 새로운 것에 도전할 수 있다.</td>
+											<td>
+												<assessmentItem data-id="h-1" data-response-type="input" data-type="feedback" data-style="w:100%">
+								
+													<itemBody>
+														<input type="text"/>
+													</itemBody>
+													<assessFeedback data-style="Fw:500">
+														<p>4</p>
+													</assessFeedback>
+												</assessmentItem>
+											</td>
+										</tr>
+
+										<tr>
+											<td data-style="Ta:l">20. 나만의 상상력으로 콘텐츠(음악, 미술, 문학, 영상 등)를 만들 수 있다.</td>
+											<td>
+												<assessmentItem data-id="h-1" data-response-type="input" data-type="feedback" data-style="w:100%">
+								
+													<itemBody>
+														<input type="text"/>
+													</itemBody>
+													<assessFeedback data-style="Fw:500">
+														<p>3</p>
+													</assessFeedback>
+												</assessmentItem>
+											</td>
+										</tr>
+
+										<!-- 언어 능력 -->
+										<tr>
+											<td rowspan="4">언어 능력</td>
+											<td data-style="Ta:l">21. 책을 빨리 읽을 수 있다.</td>
+											<td>
+												<assessmentItem data-id="h-1" data-response-type="input" data-type="feedback" data-style="w:100%">
+								
+													<itemBody>
+														<input type="text"/>
+													</itemBody>
+													<assessFeedback data-style="Fw:500">
+														<p>3</p>
+													</assessFeedback>
+												</assessmentItem>
+											</td>
+											<td rowspan="4">
+												<assessmentItem data-id="h-1" data-response-type="input" data-type="feedback" data-style="w:100%">
+								
+													<itemBody>
+														<input type="text"/>
+													</itemBody>
+													<assessFeedback data-style="Fw:500">
+														<p>12</p>
+													</assessFeedback>
+												</assessmentItem>
+											</td>
+										</tr>
+										
+										<tr>
+											<td data-style="Ta:l">22. 외국어를 쉽게 배울 수 있다.</td>
+											<td>
+												<assessmentItem data-id="h-1" data-response-type="input" data-type="feedback" data-style="w:100%">
+								
+													<itemBody>
+														<input type="text"/>
+													</itemBody>
+													<assessFeedback data-style="Fw:500">
+														<p>2</p>
+													</assessFeedback>
+												</assessmentItem>
+											</td>
+										</tr>
+
+										<tr>
+											<td data-style="Ta:l">23. 자신의 생각을 말과 글로 표현할 수 있다.</td>
+											<td>
+												<assessmentItem data-id="h-1" data-response-type="input" data-type="feedback" data-style="w:100%">
+								
+													<itemBody>
+														<input type="text"/>
+													</itemBody>
+													<assessFeedback data-style="Fw:500">
+														<p>3</p>
+													</assessFeedback>
+												</assessmentItem>
+											</td>
+										</tr>
+
+										<tr>
+											<td data-style="Ta:l">24. 말을 하거나 글을 쓸 때 적절한 단어를 사용할 수 있다.</td>
+											<td>
+												<assessmentItem data-id="h-1" data-response-type="input" data-type="feedback" data-style="w:100%">
+								
+													<itemBody>
+														<input type="text"/>
+													</itemBody>
+													<assessFeedback data-style="Fw:500">
+														<p>4</p>
+													</assessFeedback>
+												</assessmentItem>
+											</td>
+										</tr>
+
+										<!-- 수리 · 논리력 -->
+										<tr>
+											<td rowspan="4">수리 · 논리력</td>
+											<td data-style="Ta:l">25. 실생활에서 수학적 지식을 적용할 수 있다.</td>
+											<td>
+												<assessmentItem data-id="h-1" data-response-type="input" data-type="feedback" data-style="w:100%">
+								
+													<itemBody>
+														<input type="text"/>
+													</itemBody>
+													<assessFeedback data-style="Fw:500">
+														<p>2</p>
+													</assessFeedback>
+												</assessmentItem>
+											</td>
+											<td rowspan="4">
+												<assessmentItem data-id="h-1" data-response-type="input" data-type="feedback" data-style="w:100%">
+								
+													<itemBody>
+														<input type="text"/>
+													</itemBody>
+													<assessFeedback data-style="Fw:500">
+														<p>10</p>
+													</assessFeedback>
+												</assessmentItem>
+											</td>
+										</tr>
+										
+										<tr>
+											<td data-style="Ta:l">26. 통계 자료의 도표나 그래프를 이해할 수 있다.</td>
+											<td>
+												<assessmentItem data-id="h-1" data-response-type="input" data-type="feedback" data-style="w:100%">
+								
+													<itemBody>
+														<input type="text"/>
+													</itemBody>
+													<assessFeedback data-style="Fw:500">
+														<p>3</p>
+													</assessFeedback>
+												</assessmentItem>
+											</td>
+										</tr>
+
+										<tr>
+											<td data-style="Ta:l">27. 과학 실험 과정의 인과 관계를 파악할 수 있다.</td>
+											<td>
+												<assessmentItem data-id="h-1" data-response-type="input" data-type="feedback" data-style="w:100%">
+								
+													<itemBody>
+														<input type="text"/>
+													</itemBody>
+													<assessFeedback data-style="Fw:500">
+														<p>2</p>
+													</assessFeedback>
+												</assessmentItem>
+											</td>
+										</tr>
+
+										<tr>
+											<td data-style="Ta:l">28. 다양한 정보를 근거로 새로운 결론을 이끌어 낼 수 있다.</td>
+											<td>
+												<assessmentItem data-id="h-1" data-response-type="input" data-type="feedback" data-style="w:100%">
+								
+													<itemBody>
+														<input type="text"/>
+													</itemBody>
+													<assessFeedback data-style="Fw:500">
+														<p>3</p>
+													</assessFeedback>
+												</assessmentItem>
+											</td>
+										</tr>
+
+										<!-- 자기 성찰 능력 -->
+										<tr>
+											<td rowspan="4">자기 성찰 능력</td>
+											<td data-style="Ta:l">29. 돈 관리를 잘할 수 있다.</td>
+											<td>
+												<assessmentItem data-id="h-1" data-response-type="input" data-type="feedback" data-style="w:100%">
+								
+													<itemBody>
+														<input type="text"/>
+													</itemBody>
+													<assessFeedback data-style="Fw:500">
+														<p>1</p>
+													</assessFeedback>
+												</assessmentItem>
+											</td>
+											<td rowspan="4">
+												<assessmentItem data-id="h-1" data-response-type="input" data-type="feedback" data-style="w:100%">
+								
+													<itemBody>
+														<input type="text"/>
+													</itemBody>
+													<assessFeedback data-style="Fw:500">
+														<p>12</p>
+													</assessFeedback>
+												</assessmentItem>
+											</td>
+										</tr>
+										
+										<tr>
+											<td data-style="Ta:l">30. 맡은 일을 책임지고 한다.</td>
+											<td>
+												<assessmentItem data-id="h-1" data-response-type="input" data-type="feedback" data-style="w:100%">
+								
+													<itemBody>
+														<input type="text"/>
+													</itemBody>
+													<assessFeedback data-style="Fw:500">
+														<p>3</p>
+													</assessFeedback>
+												</assessmentItem>
+											</td>
+										</tr>
+
+										<tr>
+											<td data-style="Ta:l">31. 내 감정을 잘 파악하고 조절할 수 있다.</td>
+											<td>
+												<assessmentItem data-id="h-1" data-response-type="input" data-type="feedback" data-style="w:100%">
+								
+													<itemBody>
+														<input type="text"/>
+													</itemBody>
+													<assessFeedback data-style="Fw:500">
+														<p>4</p>
+													</assessFeedback>
+												</assessmentItem>
+											</td>
+										</tr>
+
+										<tr>
+											<td data-style="Ta:l">32. 목표를 달성하기 위해 계획을 세우고 지키려고 노력한다.</td>
+											<td>
+												<assessmentItem data-id="h-1" data-response-type="input" data-type="feedback" data-style="w:100%">
+								
+													<itemBody>
+														<input type="text"/>
+													</itemBody>
+													<assessFeedback data-style="Fw:500">
+														<p>4</p>
+													</assessFeedback>
+												</assessmentItem>
+											</td>
+										</tr>
+
+										<!-- 대인 관계 능력 -->
+										<tr>
+											<td rowspan="4">대인 관계 능력</td>
+											<td data-style="Ta:l">33. 다른 사람들과 협력할 수 있다.</td>
+											<td>
+												<assessmentItem data-id="h-1" data-response-type="input" data-type="feedback" data-style="w:100%">
+								
+													<itemBody>
+														<input type="text"/>
+													</itemBody>
+													<assessFeedback data-style="Fw:500">
+														<p>4</p>
+													</assessFeedback>
+												</assessmentItem>
+											</td>
+											<td rowspan="4">
+												<assessmentItem data-id="h-1" data-response-type="input" data-type="feedback" data-style="w:100%">
+								
+													<itemBody>
+														<input type="text"/>
+													</itemBody>
+													<assessFeedback data-style="Fw:500">
+														<p>12</p>
+													</assessFeedback>
+												</assessmentItem>
+											</td>
+										</tr>
+										
+										<tr>
+											<td data-style="Ta:l">34. 상황이나 분위기를 파악할 수 있다.</td>
+											<td>
+												<assessmentItem data-id="h-1" data-response-type="input" data-type="feedback" data-style="w:100%">
+								
+													<itemBody>
+														<input type="text"/>
+													</itemBody>
+													<assessFeedback data-style="Fw:500">
+														<p>2</p>
+													</assessFeedback>
+												</assessmentItem>
+											</td>
+										</tr>
+
+										<tr>
+											<td data-style="Ta:l">35. 주변 사람과의 갈등을 해결할 수 있다.</td>
+											<td>
+												<assessmentItem data-id="h-1" data-response-type="input" data-type="feedback" data-style="w:100%">
+								
+													<itemBody>
+														<input type="text"/>
+													</itemBody>
+													<assessFeedback data-style="Fw:500">
+														<p>3</p>
+													</assessFeedback>
+												</assessmentItem>
+											</td>
+										</tr>
+
+										<tr>
+											<td data-style="Ta:l">36. 주변 사람들은 나를 괜찮은 사람이라고 여긴다.</td>
+											<td>
+												<assessmentItem data-id="h-1" data-response-type="input" data-type="feedback" data-style="w:100%">
+								
+													<itemBody>
+														<input type="text"/>
+													</itemBody>
+													<assessFeedback data-style="Fw:500">
+														<p>3</p>
+													</assessFeedback>
+												</assessmentItem>
+											</td>
+										</tr>
+
+										<!-- 자연 친화력 -->
+										<tr>
+											<td rowspan="4">자연 친화력</td>
+											<td data-style="Ta:l">37. 동물에 대한 관심이 있다.</td>
+											<td>
+												<assessmentItem data-id="h-1" data-response-type="input" data-type="feedback" data-style="w:100%">
+								
+													<itemBody>
+														<input type="text"/>
+													</itemBody>
+													<assessFeedback data-style="Fw:500">
+														<p>4</p>
+													</assessFeedback>
+												</assessmentItem>
+											</td>
+											<td rowspan="4">
+												<assessmentItem data-id="h-1" data-response-type="input" data-type="feedback" data-style="w:100%">
+								
+													<itemBody>
+														<input type="text"/>
+													</itemBody>
+													<assessFeedback data-style="Fw:500">
+														<p>14</p>
+													</assessFeedback>
+												</assessmentItem>
+											</td>
+										</tr>
+										
+										<tr>
+											<td data-style="Ta:l">38. 자연을 잘 관찰할 수 있다.</td>
+											<td>
+												<assessmentItem data-id="h-1" data-response-type="input" data-type="feedback" data-style="w:100%">
+								
+													<itemBody>
+														<input type="text"/>
+													</itemBody>
+													<assessFeedback data-style="Fw:500">
+														<p>3</p>
+													</assessFeedback>
+												</assessmentItem>
+											</td>
+										</tr>
+
+										<tr>
+											<td data-style="Ta:l">39. 환경 오염 문제에 관심이 많다.</td>
+											<td>
+												<assessmentItem data-id="h-1" data-response-type="input" data-type="feedback" data-style="w:100%">
+								
+													<itemBody>
+														<input type="text"/>
+													</itemBody>
+													<assessFeedback data-style="Fw:500">
+														<p>4</p>
+													</assessFeedback>
+												</assessmentItem>
+											</td>
+										</tr>
+
+										<tr>
+											<td data-style="Ta:l">40. 비슷한 식물을 구분할 수 있다.</td>
+											<td>
+												<assessmentItem data-id="h-1" data-response-type="input" data-type="feedback" data-style="w:100%">
+								
+													<itemBody>
+														<input type="text"/>
+													</itemBody>
+													<assessFeedback data-style="Fw:500">
+														<p>3</p>
+													</assessFeedback>
+												</assessmentItem>
+											</td>
+										</tr>
+
+										<!-- 예술 시각 능력 -->
+										<tr>
+											<td rowspan="4">예술 시각 능력</td>
+											<td data-style="Ta:l">41. 패션을 조화롭게 연출할 수 있다.</td>
+											<td>
+												<assessmentItem data-id="h-1" data-response-type="input" data-type="feedback" data-style="w:100%">
+								
+													<itemBody>
+														<input type="text"/>
+													</itemBody>
+													<assessFeedback data-style="Fw:500">
+														<p>4</p>
+													</assessFeedback>
+												</assessmentItem>
+											</td>
+											<td rowspan="4">
+												<assessmentItem data-id="h-1" data-response-type="input" data-type="feedback" data-style="w:100%">
+								
+													<itemBody>
+														<input type="text"/>
+													</itemBody>
+													<assessFeedback data-style="Fw:500">
+														<p>16</p>
+													</assessFeedback>
+												</assessmentItem>
+											</td>
+										</tr>
+										
+										<tr>
+											<td data-style="Ta:l">42. 대상을 입체적으로 그릴 수 있다.</td>
+											<td>
+												<assessmentItem data-id="h-1" data-response-type="input" data-type="feedback" data-style="w:100%">
+								
+													<itemBody>
+														<input type="text"/>
+													</itemBody>
+													<assessFeedback data-style="Fw:500">
+														<p>4</p>
+													</assessFeedback>
+												</assessmentItem>
+											</td>
+										</tr>
+
+										<tr>
+											<td data-style="Ta:l">43. 생각과 느낌을 시각적으로 표현할 수 있다.</td>
+											<td>
+												<assessmentItem data-id="h-1" data-response-type="input" data-type="feedback" data-style="w:100%">
+								
+													<itemBody>
+														<input type="text"/>
+													</itemBody>
+													<assessFeedback data-style="Fw:500">
+														<p>4</p>
+													</assessFeedback>
+												</assessmentItem>
+											</td>
+										</tr>
+
+										<tr>
+											<td data-style="Ta:l">44. 영화를 감상할 때 화면 구성을 위주로 본다.</td>
+											<td>
+												<assessmentItem data-id="h-1" data-response-type="input" data-type="feedback" data-style="w:100%">
+								
+													<itemBody>
+														<input type="text"/>
+													</itemBody>
+													<assessFeedback data-style="Fw:500">
+														<p>4</p>
+													</assessFeedback>
+												</assessmentItem>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+
+								<style>
+									#q1 table{
+										width:115rem; height:227.6rem;
+									}
+									#q1 thead th{
+										font-family:'Jamsil';
+										font-size:2.3rem;
+										font-weight:400;
+										color:#fff;
+										height:5.4rem;
+									}
+									#q1 table th:nth-child(1){
+										width:17.8rem;
+									}
+									#q1 table th:nth-child(2){
+										width:72.6rem;
+									}
+									#q1 table th:nth-child(3){
+										width:10.6rem;
+									}
+									
+									#q1 tbody{
+										font-family:'Nanum';
+										font-size:2.1rem;
+										font-weight:500;
+									}
+									#q1 tbody td{
+										padding:0 1rem;
+										text-align:center;
+										height:4.0rem;
+									}
+								</style>
+							</div>
+
+							<quizBtn data-type="exReset">
+								<span>정답 보기/다시하기</span>
+							</quizBtn>
+						</div>
+					</quiz>
+				</tabItem>
+				
+				
+
+				<tabItem>
+					<quiz id="q3">
+						<h1 data-subject="숫자">
+							<span>2</span>
+							<span>영역별 총점이 높은 직업 적성 세 가지의 특징과 추천 직업을 알아보자.</span>
+						</h1>
+						<div data-style="center">
+							<div role="table" data-style="w:104.3rem h:38.5rem BG:images/page_026_1-3-1-3-1/bg-표-3.png">
+						
+								<ol data-style="P:a x:10.4rem y:10.4rem F:Jamsil Fs:2rem LH:11.4rem Fc:#8e582a">
+									<li>1</li>
+									<li>2</li>
+									<li>3</li>
+								</ol>
+								<div role="thead">
+									<ul role="tr">
+										<li role="th"><span>적성 영역</span></li>
+										<li role="th"><span>특징과 추천 직업</span></li>
+									</ul>
+								</div>
+								
+								<div role="tbody">
+									<ul role="tr">
+										<li role="td">
+											<assessmentItem data-response-type="input" data-type="feedback" data-style="w:100% h:100% pl:7rem">
+								
+												<itemBody>
+													<textarea></textarea>
+												</itemBody>
+												<assessFeedback data-style="Fw:500 LH:10.8rem pl:1rem">
+													<p>공간 지각력</p>
+												</assessFeedback>
+
+												<button data-quick-btn="answerReset" data-style="P:a r:0rem b:0rem">정답 보기/다시하기</button>
+											</assessmentItem>
+										</li>
+										<li role="td">
+											<assessmentItem data-response-type="input" data-type="feedback" data-style="w:100% h:100%">
+								
+												<itemBody>
+													<textarea></textarea>
+												</itemBody>
+												<assessFeedback data-style="Fw:500 LH:4.4rem pt:1.5rem">
+													<p>머릿속으로 입체적인 물체의 위치나 모습을 상상하여 떠올릴 수 있는 능력(비행기 조종사, 무대 감독, 건축 공학 기술자 등)</p>
+												</assessFeedback>
+
+												<button data-quick-btn="answerReset" data-style="P:a r:0rem b:0rem">정답 보기/다시하기</button>
+											</assessmentItem>
+										</li>
+									</ul>
+
+									<ul role="tr">
+										<li role="td">
+											<assessmentItem data-response-type="input" data-type="feedback" data-style="w:100% h:100% pl:7rem">
+								
+												<itemBody>
+													<textarea></textarea>
+												</itemBody>
+												<assessFeedback data-style="Fw:500 LH:10.8rem">
+													<p>예술 시각 능력</p>
+												</assessFeedback>
+
+												<button data-quick-btn="answerReset" data-style="P:a r:0rem b:0rem">정답 보기/다시하기</button>
+											</assessmentItem>
+										</li>
+										<li role="td">
+											<assessmentItem data-response-type="input" data-type="feedback" data-style="w:100% h:100%">
+								
+												<itemBody>
+													<textarea></textarea>
+												</itemBody>
+												<assessFeedback data-style="Fw:500 LH:4.4rem pt:1.5rem">
+													<p>선, 색, 공간, 영상 등에 민감하게 반응하고 조화롭게 재구성할 수 있는 능력(사진작가, 애니메이터, 시각 디자이너 등)</p>
+												</assessFeedback>
+
+												<button data-quick-btn="answerReset" data-style="P:a r:0rem b:0rem">정답 보기/다시하기</button>
+											</assessmentItem>
+										</li>
+									</ul>
+
+									<ul role="tr">
+										<li role="td">
+											<assessmentItem data-response-type="input" data-type="feedback" data-style="w:100% h:100% pl:7rem">
+								
+												<itemBody>
+													<textarea></textarea>
+												</itemBody>
+												<assessFeedback data-style="Fw:500 LH:10.8rem pl:1rem">
+													<p>자연 친화력</p>
+												</assessFeedback>
+
+												<button data-quick-btn="answerReset" data-style="P:a r:0rem b:0rem">정답 보기/다시하기</button>
+											</assessmentItem>
+										</li>
+										<li role="td">
+											<assessmentItem data-response-type="input" data-type="feedback" data-style="w:100% h:100%">
+								
+												<itemBody>
+													<textarea></textarea>
+												</itemBody>
+												<assessFeedback data-style="Fw:500 LH:4.4rem pt:1.5rem LS:-0.1rem">
+													<p>인간과 자연이 서로 연관되어 있음을 이해하며, 자연에 관심을 가지고 탐구하고 보호할 수 있는 능력(동물 조련사, 수의사, 농업 기술자 등)</p>
+												</assessFeedback>
+
+												<button data-quick-btn="answerReset" data-style="P:a r:0rem b:0rem">정답 보기/다시하기</button>
+											</assessmentItem>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						
+						<style>
+							#q3 [role="thead"]{
+								font-family:'Jamsil';
+								font-size:2.8rem;
+								font-weight:400;
+								color:#fff;
+								text-align:center;
+							}
+							#q3 [role="tbody"]{
+								font-family:'Nanum';
+								font-size:2.6rem;
+								font-weight:400;
+							}
+							#q3 ul{
+								display:table;
+								clear:both;
+							}
+							#q3 ul>li{
+								float:left;
+								height:11.3rem;
+								line-height:4.3rem;
+								
+							}
+							#q3 [role="thead"] ul>li{
+								height:4.4rem;
+								line-height:4.4rem;
+							}
+								#q3 ul>li:nth-child(1){
+									width:29.7rem;
+								}
+								#q3 ul>li:nth-child(2){
+									width:74.6rem;
+									padding: 0 1rem;
+								}
+							#q3 [role="tbody"] ul>li:nth-child(1){
+								width:29.7rem;
+							}
+
+							#q3 [role="tbody"] ul>li{
+								height:11.3rem;
+								line-height:4.5rem;
+							}
+
+						</style>
+						<quizBtn data-type="exReset">
+							<span>정답 보기/다시하기</span>
+						</quizBtn>
+					</quiz>
+
+					<popup 
+						data-mode="view" 
+						data-type="tip" 
+						data-id="v-1"
+						data-style="P:a r:0 b:2.0rem">
+						<span>Tip 보기</span>
+					</popup>
+				</tabItem>
+				
+				
+			</tab>
+		</section>
+		
+	<!--화면 뷰 영역 끝-->	
+	</article></main>
+	
+	<popupView 
+		data-id="v-1" 
+		data-color="진파랑" 
+		data-size="big">
+		
+		<h1>TIP</h1>
+		<div data-style="mt:2.0rem O:a h:300">
+			<h2>적성 검사를 통해 내가 어떤 분야를 잘할 수 있는지, 해당 적성이 높은 사람들은 주로 어떤 직업을 갖는지 확인할 수 있다.</h2>
+			<h2>영역별 점수가 비슷하다면 자신의 관심과 흥미가 어디에 더 있는지, 직업 전망은 어떤지, 현실적인 여건은 어떤지 등을 생각해 보자. 적성은 직업을 선택할 때 고려해야 할 요소 중 하나일 뿐이다.</h2>
+			<h2>적성이 낮더라도 노력을 통해 변화시킬 수 있다. 적성과 흥미는 다를 수 있고, 직업을 선택할 때 둘 중 하나를 더 우선시 할 수 있다. 직업 세계는 매우 복잡하기 때문에 나의 흥미와 적성을 모두 발휘할 수 있는 방법도 있다는 점을 기억해야 한다.</h2>
+		</div>
+	</popupView>
+	
+<!--컨테이너 끝-->
+</container></div></body></html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!--메타 데이타-->
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta name="viewport" content="width=1280, height=720">
+  	<!--CSS-->
+	<link rel="stylesheet" type="text/css" href="./src/css/module.fonts.css" />
+	<link rel="stylesheet" type="text/css" href="./src/css/module.skill.css" />
+	<link rel="stylesheet" type="text/css" href="./src/css/popup.nav.css" />
+	<link rel="stylesheet" type="text/css" href="./src/css/popup.view.css" />
+	<link rel="stylesheet" type="text/css" href="./src/css/screen.css" />
+	<!--DATAS-->
+	<script type="text/javascript" src="src/datas/datas.index.js" ></script>
+    <!--MODULE-->
+    <script type="text/javascript" src="../../../../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../../../../js/binder_web.min.js"></script>
+	<script type="text/javascript" src="src/js/module.fn.js" ></script>
+	<script type="text/javascript" src="src/js/popup.navi.js" ></script>
+	<script type="text/javascript" src="src/js/popup.view.js" ></script>
+</head>
+
+<!--컨테이너 시작-->
+<body><div><container>
+
+	<!--화면 뷰 영역 시작--><!--기본 디자인 설정--->
+	<main><article id="mainView" data-design="">
+		
+		<!--본문 내용--->
+		<section>
+			
+			<slide>
+				<slideItem>
+					
+					<quiz data-style="P:a x:0 y:0">
+							
+						<h1 data-subject="연필" data-style="Fs:3.6rem LS:-0.1rem">
+							<span>SWOT 분석으로 나에 대해 알아보고, 강점은 강화하고 약점은 보완할 수 있는 전략을 세워 보자.</span>
+						</h1>
+						
+						<div data-style="P:r w:81.1rem h:43.0rem BG:images/page_032_1-3-1-6-1/bg-내용판-01.png ml:16.5rem">
+							
+							<h2 data-style="P:a x:0.8rem y:7.9rem F:Elec Fs:1.9rem Fc:#fff" style="writing-mode: vertical-lr;">내적 요인</h2>
+							<h2 data-style="P:a x:0.8rem y:30.6rem F:Elec Fs:1.9rem Fc:#fff" style="writing-mode: vertical-lr;">외적 요인</h2>
+							
+							<ul data-style="Fs:1.7rem Fw:500 LS:-0.1rem w:6rem Fc:#fff">
+								<p data-style="P:a x:35.8rem y:17.3rem">강점(S)</p>
+								<p data-style="P:a x:43.5rem y:17.3rem">약점(W)</p>
+								<p data-style="P:a x:35.8rem y:24rem">기회(O)</p>
+								<p data-style="P:a x:43.5rem y:24rem">위협(T)</p>
+							</ul>
+
+							<assessmentItem data-response-type="input" data-type="feedback" data-style="P:a x:5.5rem y:2.0rem w:25.0rem h:17rem Fs:2.6rem LH:4rem">
+								
+								<itemBody>
+									<textarea></textarea>
+								</itemBody>
+								<assessFeedback data-style="Fw:500">
+									<p>사람들과 소통하며 과제를 수행하는 능력이 뛰어나다.</p>
+								</assessFeedback>
+
+								<button data-quick-btn="answerReset" data-style="P:a x:30rem y:-1.5rem">정답 보기/다시하기</button>
+							</assessmentItem>
+							
+							<assessmentItem data-response-type="input" data-type="feedback" data-style="P:a x:54.5rem y:2.0rem w:25.0rem h:17rem Fs:2.6rem LH:4rem">
+								
+								<itemBody>
+									<textarea></textarea>
+								</itemBody>
+								<assessFeedback data-style="Fw:500">
+									<p>일을 뒤로 미루는 습관이 있다.</p>
+								</assessFeedback>
+
+								<button data-quick-btn="answerReset" data-style="P:a r:30rem y:-1.5rem">정답 보기/다시하기</button>
+							</assessmentItem>
+							
+							<assessmentItem data-response-type="input" data-type="feedback" data-style="P:a x:5.5rem y:24.5rem w:25.0rem h:17rem Fs:2.6rem LH:4rem">
+								
+								<itemBody>
+									<textarea></textarea>
+								</itemBody>
+								<assessFeedback data-style="Fw:500">
+									<p>나의 주변에는 상식이 풍부한 친구들이 많다.</p>
+								</assessFeedback>
+
+								<button data-quick-btn="answerReset" data-style="P:a x:30rem b:-1rem">정답 보기/다시하기</button>
+							</assessmentItem>
+							
+							<assessmentItem data-response-type="input" data-type="feedback" data-style="P:a x:54.5rem y:24.5rem w:25.0rem h:17rem Fs:2.6rem LH:4rem">
+								
+								<itemBody>
+									<textarea></textarea>
+								</itemBody>
+								<assessFeedback data-style="Fw:500">
+									<p>아직 적성을 찾지 못하였다.</p>
+								</assessFeedback>
+
+								<button data-quick-btn="answerReset" data-style="P:a r:30rem b:-1rem">정답 보기/다시하기</button>
+							</assessmentItem>
+						</div>
+
+						<popup 
+							data-mode="view" 
+							data-type="tip" 
+							data-id="v-1"
+							data-style="P:a r:0 b:2.0rem">
+							<span>Tip 보기</span>
+						</popup>
+
+						<quizBtn data-type="exReset">
+							<span>정답 보기/다시하기</span>
+						</quizBtn>
+					</quiz>
+				</slideItem>
+				
+				<slideItem>
+					<quiz id="q1" data-style="P:a x:0 y:0">
+						
+						<h1 data-subject="연필" data-style="Fs:3.6rem LS:-0.1rem">
+							<span>내적 · 외적 요인을 활용하여 진로 역량을 키울 수 있는 전략을 세워 보자.</span>
+						</h1>
+						
+						<div data-style="center">
+							<div data-style="P:r O:a h:480">
+								<table data-style="mt:0.5rem BG:images/page_032_1-3-1-6-1/bg-표-02.png">
+									<tbody>
+
+										<tr>
+											<td>강점을 활용하고 기회를 살리기<br/>(SO 전략)</td>
+											<td>
+												<assessmentItem data-response-type="input" data-type="feedback" data-style="w:100% h:8rem LH:4rem">
+								
+													<itemBody>
+														<textarea></textarea>
+													</itemBody>
+													<assessFeedback data-style="Fw:500 pt:2rem">
+														<p>상식이 풍부한 친구들과 과제를 수행하며 다양한 지식을 습득한다.</p>
+													</assessFeedback>
+					
+													<button data-quick-btn="answerReset" data-style="P:a r:-3rem b:-1rem">정답 보기/다시하기</button>
+												</assessmentItem>
+											</td>
+										</tr>
+										
+										<tr>
+											<td>약점을 줄이고 기회를 살리기<br/>(WO 전략)</td>
+											<td>
+												<assessmentItem data-response-type="input" data-type="feedback" data-style="w:100% h:8rem LH:4rem">
+								
+													<itemBody>
+														<textarea></textarea>
+													</itemBody>
+													<assessFeedback data-style="Fw:500">
+														<p>계획을 잘 실천하는 친구들의 자기 관리 습관을 살펴보고, 일을 미루는 습관을 개선한다.</p>
+													</assessFeedback>
+					
+													<button data-quick-btn="answerReset" data-style="P:a r:-3rem b:-1rem">정답 보기/다시하기</button>
+												</assessmentItem>
+											</td>
+										</tr>
+
+										<tr>
+											<td>강점을 살리고 위협을 줄이기<br/>(ST 전략)</td>
+											<td>
+												<assessmentItem data-response-type="input" data-type="feedback" data-style="w:100% h:8rem LH:4rem">
+								
+													<itemBody>
+														<textarea></textarea>
+													</itemBody>
+													<assessFeedback data-style="Fw:500">
+														<p>친구들과의 소통을 통해 나의 적성이 무엇인지 간접적으로 듣고 이미 진행한 활동 자료를 토대로 적성을 알아볼 것이다.</p>
+													</assessFeedback>
+					
+													<button data-quick-btn="answerReset" data-style="P:a r:-3rem b:-1rem">정답 보기/다시하기</button>
+												</assessmentItem>
+											</td>
+										</tr>
+
+										<tr>
+											<td>약점을 보완하여 위협을 줄이기<br/>(WT 전략)</td>
+											<td>
+												<assessmentItem data-response-type="input" data-type="feedback" data-style="w:100% h:8rem LH:4rem">
+								
+													<itemBody>
+														<textarea></textarea>
+													</itemBody>
+													<assessFeedback data-style="Fw:500">
+														<p>나의 적성을 찾는 일을 뒤로 미루지 않고 진로 사이트에서 진행한 활동을 통해 적성을 다시 점검할 것이다.</p>
+													</assessFeedback>
+					
+													<button data-quick-btn="answerReset" data-style="P:a r:-3rem b:-1rem">정답 보기/다시하기</button>
+												</assessmentItem>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								
+								<style>
+									#q1 table{
+										width:115rem; height:47.0rem;
+									}
+									#q1 table td:nth-child(1){
+										width: 39.7rem;
+									}
+									
+									#q1 tbody td:nth-child(1){
+										font-family:'Jamsil';
+										font-size:2.4rem;
+										font-weight:400;
+										color:#fff;
+										line-height: 4rem;
+										text-align:center;
+									}
+									#q1 tbody td:nth-child(2){
+										font-family:'Nanum';
+										font-size:2.4rem;
+										font-weight:500;
+									}
+									#q1 tbody td{
+										padding:0 4rem;
+										
+									}
+									
+									#q1 tbody td:nth-child(2) [data-hide-target]{
+										color:#0026b3;
+										text-align: left;
+										line-height: 4rem;
+									}
+								</style>
+							</div>
+
+							<quizBtn data-type="exReset">
+								<span>정답 보기/다시하기</span>
+							</quizBtn>
+						</div>
+					</quiz>
+					
+				</slideItem>
+			</slide>
+			
+		</section>
+		
+	<!--화면 뷰 영역 끝-->	
+	</article></main>
+	<popupView 
+		data-id="v-1" 
+		data-color="진파랑" 
+		data-size="big">
+		
+		<h1>TIP</h1>
+		<div data-style="mt:2.0rem O:a h:300">
+			<h2>SWOT 분석으로 나에 대해 분석하여 자신의 강점(Strength)과 약점(Weakness)을 발견하고, 나를 둘러싼 환경을 분석하여 기회(Opportunity)와 위협(Threat)을 찾아내 이를 토대로 전략을 수립할 수 있다.</h2>
+		</div>
+	</popupView>
+<!--컨테이너 끝-->
+</container></div></body></html>

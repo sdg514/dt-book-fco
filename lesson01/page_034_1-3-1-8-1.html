@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!--메타 데이타-->
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta name="viewport" content="width=1280, height=720">
+  	<!--CSS-->
+	<link rel="stylesheet" type="text/css" href="./src/css/module.fonts.css" />
+	<link rel="stylesheet" type="text/css" href="./src/css/module.skill.css" />
+	<link rel="stylesheet" type="text/css" href="./src/css/popup.nav.css" />
+	<link rel="stylesheet" type="text/css" href="./src/css/popup.view.css" />
+	<link rel="stylesheet" type="text/css" href="./src/css/screen.css" />
+	<!--DATAS-->
+	<script type="text/javascript" src="src/datas/datas.index.js" ></script>
+    <!--MODULE-->
+    <script type="text/javascript" src="../../../../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../../../../js/binder_web.min.js"></script>
+	<script type="text/javascript" src="src/js/module.fn.js" ></script>
+	<script type="text/javascript" src="src/js/popup.navi.js" ></script>
+	<script type="text/javascript" src="src/js/popup.view.js" ></script>
+</head>
+
+<!--컨테이너 시작-->
+<body><div><container>
+
+	<!--화면 뷰 영역 시작--><!--기본 디자인 설정--->
+	<main><article id="mainView" data-design="">
+			
+		<header>
+			<h1 data-subject="숫자" data-style="Fs:4.0rem LS:-0.2rem mt:3.5rem">
+				<span>2</span>
+				<span>나의 흥미 유형과 특징을 간단하게 정리해 보고, 추천 학습법을 적용할 수 있는 과목과 방법을 적어 보자.</span>
+			</h1>
+		</header>
+		<!--본문 내용--->
+		<section>
+			<quiz id="q1">
+				
+				<div data-style="center">
+					<table data-style="BG:images/page_034_1-3-1-8-1/bg-표-1.png mt:10rem">
+						<thead>
+							<tr>
+								<th>나의 흥미 유형</th>
+								<th>특징</th>
+								<th>과목과 학습 방법</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<assessmentItem data-response-type="input" data-type="feedback" data-style="w:100% h:100%">
+								
+										<itemBody>
+											<textarea></textarea>
+										</itemBody>
+										<assessFeedback data-style="Fw:500 pt:6.5rem">
+											<p>탐구형(I)</p>
+										</assessFeedback>
+		
+										<button data-quick-btn="answerReset" data-style="P:a r:-1rem b:-0rem">정답 보기/다시하기</button>
+									</assessmentItem>
+								</td>
+								<td>
+									<assessmentItem data-response-type="input" data-type="feedback" data-style="w:100% h:100%">
+								
+										<itemBody>
+											<textarea></textarea>
+										</itemBody>
+										<assessFeedback data-style="Fw:500 pt:1.5rem LH:4rem Ta:j">
+											<p>깊이 탐구하여 개념과 원리를 이해하고 자신만의 방법으로 학습하는 것을 선호한다.</p>
+										</assessFeedback>
+		
+										<button data-quick-btn="answerReset" data-style="P:a r:-1rem b:-0rem">정답 보기/다시하기</button>
+									</assessmentItem>
+								</td>
+								<td>
+									<assessmentItem data-response-type="input" data-type="feedback" data-style="w:100% h:100%">
+								
+										<itemBody>
+											<textarea></textarea>
+										</itemBody>
+										<assessFeedback data-style="Fw:500 pt:3.5rem LH:4rem Ta:j">
+											<p>수학 문제를 풀고 친구들과 함께 틀린 문제의 해결 과정을 비교하며 확인해 보며 앞으로 실수하지 않도록 학습한다.</p>
+										</assessFeedback>
+		
+										<button data-quick-btn="answerReset" data-style="P:a r:-1rem b:-0rem">정답 보기/다시하기</button>
+									</assessmentItem>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					
+					<style>
+						#q1 table{
+							width:100%; height:21.0rem;
+						}
+						#q1 thead th{
+							font-family:'Jamsil';
+							font-size:2.5rem;
+							font-weight:400;
+							color:#fff;
+							height:5.7rem;
+						}
+						#q1 table th:nth-child(1){
+							width:28.4rem;
+						}
+						#q1 table th:nth-child(2){
+							width:27.9rem;
+						}
+						#q1 tbody{
+							font-family:'Nanum';
+							font-size:2.1rem;
+							font-weight:500;
+						}
+						#q1 tbody td{
+							padding:0 1rem;
+							text-align:center;
+						}
+						#q1 tbody td [data-hide-target]{
+							color:#0026b3;
+							text-align: justify;
+							line-height: 4rem;
+						}
+					</style>
+				
+				</div>
+				
+				<quizBtn data-type="exReset">
+					<span>정답 보기/다시하기</span>
+				</quizBtn>
+			</quiz>
+		</section>
+		
+	<!--화면 뷰 영역 끝-->	
+	</article></main>
+	
+<!--컨테이너 끝-->
+</container></div></body></html>

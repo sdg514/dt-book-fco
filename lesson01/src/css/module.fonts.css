@@ -1,0 +1,152 @@
+
+
+/**
+ * 	ONE Mobile Title
+*/ 
+@font-face {
+	font-family:'One';
+	font-weight:normal;
+	src:local('※'),
+	url('../com/fonts/woff/ONE Mobile Title OTF.woff') format("woff"),
+	url('../com/fonts/otf/ONE Mobile Title OTF.otf') format("otf");
+}
+/**
+ * 	전기안전체
+ */
+@font-face {
+	font-family:'Elec';
+	font-weight:normal;
+	src:local('※'),
+	url('../com/fonts/woff/전기안전체 Bold.woff') format("woff"),
+	url('../com/fonts/otf/전기안전체 Bold.otf') format("otf");
+}
+/**
+ * 	강원교육새음
+ */
+@font-face {
+	font-family:'Gangwon';
+	font-weight:normal;
+	src:local('※'),
+	url('../com/fonts/woff/강원교육새음.woff') format("woff"),
+	url('../com/fonts/otf/강원교육새음.otf') format("otf");
+}
+
+/**
+ * 	Gmarket
+*/ 
+@font-face {
+	font-family:'Gmarket';
+	font-weight:300;
+	src:local('※'),
+	url('../com/fonts/woff/GmarketSansLight.woff') format("woff"),
+	url('../com/fonts/otf/GmarketSansLight.otf') format("otf");
+}
+@font-face {
+	font-family:'Gmarket';
+	font-weight:normal;
+	src:local('※'),
+	url('../com/fonts/woff/GmarketSansMedium.woff') format("woff"),
+	url('../com/fonts/otf/GmarketSansMedium.otf') format("otf");
+}
+@font-face {
+	font-family:'Gmarket';
+	font-weight:500;
+	src:local('※'),
+	url('../com/fonts/woff/GmarketSansBold.woff') format("woff"),
+	url('../com/fonts/otf/GmarketSansBold.otf') format("otf");
+}
+
+/**
+ * 	NanumSquareRound
+ */
+@font-face {
+	font-family:'Nanum';
+	font-weight:300;
+	src:local('※'),
+	url('../com/fonts/woff/NanumSquareRoundL.woff') format("woff"),
+	url('../com/fonts/otf/NanumSquareRoundL.otf') format("otf");
+}
+@font-face {
+	font-family:'Nanum';
+	font-weight:normal;
+	src:local('※'),
+	url('../com/fonts/woff/NanumSquareRoundR.woff') format("woff"),
+	url('../com/fonts/otf/NanumSquareRoundR.otf') format("otf");
+}
+@font-face {
+	font-family:'Nanum';
+	font-weight:500;
+	src:local('※'),
+	url('../com/fonts/woff/NanumSquareRoundB.woff') format("woff"),
+	url('../com/fonts/otf/NanumSquareRoundB.otf') format("otf");
+}
+@font-face {
+	font-family:'Nanum';
+	font-weight:600;
+	src:local('※'),
+	url('../com/fonts/woff/NanumSquareRoundEB.woff') format("woff"),
+	url('../com/fonts/otf/NanumSquareRoundEB.otf') format("otf");
+}
+
+
+/**
+ * 	Jamsil
+ */
+@font-face {
+	font-family:'Jamsil';
+	font-weight:200;
+	src:local('※'),
+	url('../com/fonts/woff/The-Jamsil-OTF-1-Thin.woff') format("woff"),
+	url('../com/fonts/otf/The Jamsil OTF 1 Thin.otf') format("otf");
+}
+@font-face {
+	font-family:'Jamsil';
+	font-weight:300;
+	src:local('※'),
+	url('../com/fonts/woff/The-Jamsil-OTF-2-Light.woff') format("woff"),
+	url('../com/fonts/otf/The Jamsil OTF 2 Light.otf') format("otf");
+}
+@font-face {
+	font-family:'Jamsil';
+	font-weight:400;
+	src:local('※'),
+	url('../com/fonts/woff/The-Jamsil-OTF-3-Regular.woff') format("woff"),
+	url('../com/fonts/otf/The Jamsil OTF 3 Regular.otf') format("otf");
+}
+@font-face {
+	font-family:'Jamsil';
+	font-weight:500;
+	src:local('※'),
+	url('../com/fonts/woff/The-Jamsil-OTF-4-Medium.woff') format("woff"),
+	url('../com/fonts/otf/The Jamsil OTF 4 Medium.otf') format("otf");
+}
+@font-face {
+	font-family:'Jamsil';
+	font-weight:600;
+	src:local('※'),
+	url('../com/fonts/woff/The-Jamsil-OTF-5-Bold.woff') format("woff"),
+	url('../com/fonts/otf/The Jamsil OTF 5 Bold.otf') format("otf");
+}
+@font-face {
+	font-family:'Jamsil';
+	font-weight:700;
+	src:local('※'),
+	url('../com/fonts/woff/The-Jamsil-OTF-6-ExtraBold.woff') format("woff"),
+	url('../com/fonts/otf/The Jamsil OTF 6 ExtraBold.otf') format("otf");
+}
+
+
+
+
+/*--------------------------------------------------------------
+  	폰트 기본 셋팅 [띄어 쓰기 : &#xA0; / &#160; / &#32; 줄 바꿈 <br>]
+----------------------------------------------------------------*/
+body{
+	font-family:'Jamsil';
+	font-size:5rem; 
+	font-weight:normal;
+	text-align:justify;
+	color:#1c1c1c;
+	letter-spacing:-0.03rem;
+}
+

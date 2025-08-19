@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!--메타 데이타-->
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta name="viewport" content="width=1280, height=720">
+  	<!--CSS-->
+	<link rel="stylesheet" type="text/css" href="./src/css/module.fonts.css" />
+	<link rel="stylesheet" type="text/css" href="./src/css/module.skill.css" />
+	<link rel="stylesheet" type="text/css" href="./src/css/popup.nav.css" />
+	<link rel="stylesheet" type="text/css" href="./src/css/popup.view.css" />
+	<link rel="stylesheet" type="text/css" href="./src/css/screen.css" />
+	<!--DATAS-->
+	<script type="text/javascript" src="src/datas/datas.index.js" ></script>
+    <!--MODULE-->
+    <script type="text/javascript" src="../../../../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../../../../js/binder_web.min.js"></script>
+	<script type="text/javascript" src="src/js/module.fn.js" ></script>
+	<script type="text/javascript" src="src/js/popup.navi.js" ></script>
+	<script type="text/javascript" src="src/js/popup.view.js" ></script>
+</head>
+
+<!--컨테이너 시작-->
+<body><div><container>
+
+	<!--화면 뷰 영역 시작--><!--기본 디자인 설정--->
+	<main><article id="mainView" data-design="tab">
+		
+		<!--본문 내용--->
+		<section>
+			<tab>
+				<tabItem>
+					<quiz>
+						<h1 data-subject="숫자">
+							<span>1</span>
+							<span>나의 관심 분야 직업을 두 가지 정하고 관련 직업인을 다섯 명씩 찾아 이름을 적어 보자.</span>
+						</h1>
+
+						<div data-style="P:r w:73.75rem h:42.0rem BG:images/page_015_2-2-2-3-1/bg-표1.png ml:22rem">
+							
+							<assessmentItem data-response-type="input" data-type="feedback" data-style="P:a x:10rem y:0.6rem w:21rem Fs:2.1rem">
+								<span data-style="P:a x:-90 y:0 F:Elec LS:-0.1rem">관심 직업</span>
+								<itemBody>
+									<input type="text"/>
+								</itemBody>
+								<assessFeedback>
+									<p data-style="Ta:c Fw:500">중고등학교 교사</p>
+								</assessFeedback>
+								<button data-quick-btn="answerReset" data-style="x:23.5rem t:-4rem">정답 보기/다시하기</button>
+							</assessmentItem>
+
+							<assessmentItem data-response-type="input" data-type="feedback" data-style="P:a x:49rem y:0.6rem w:21rem Fs:2.1rem">
+								<span data-style="P:a x:-90 y:0 F:Elec LS:-0.1rem">관심 직업</span>
+								<itemBody>
+									<input type="text"/>
+								</itemBody>
+								<assessFeedback>
+									<p data-style="Ta:c Fw:500">공연 기획자</p>
+								</assessFeedback>
+								<button data-quick-btn="answerReset" data-style="x:23.5rem t:-4rem">정답 보기/다시하기</button>
+							</assessmentItem>
+
+							<ul id="q1" data-style="P:a x:2.9rem y:9.5rem Fs:2rem F:Nanum Fw:500 LH:6rem Fc:#21b8ba">
+								<li><span>1</span></li>
+								<li><span>2</span></li>
+								<li><span>3</span></li>
+								<li><span>4</span></li>
+								<li><span>5</span></li>
+							</ul>
+
+							<assessmentItem data-response-type="input" data-type="feedback" data-style="P:a x:6rem y:9.5rem Fs:2rem F:Nanum Fw:500 LH:6rem w:26rem">
+								<itemBody>
+									<input type="text"/>
+									<input type="text"/>
+									<input type="text"/>
+									<input type="text"/>
+									<input type="text"/>
+								</itemBody>
+								<assessFeedback>
+									<p data-style="Ta:c">김상영</p>
+									<p data-style="Ta:c">박유선</p>
+									<p data-style="Ta:c">양희만</p>
+									<p data-style="Ta:c">이정형</p>
+									<p data-style="Ta:c">근장현</p>
+								</assessFeedback>
+								<button data-quick-btn="answerReset" data-style="P:a x:26rem y:-3rem">정답 보기/다시하기</button>
+							</assessmentItem>
+
+							<ul id="q2" data-style="P:a x:41.6rem y:9.5rem Fs:2rem F:Nanum Fw:500 LH:6rem Fc:#21b8ba">
+								<li><span>1</span></li>
+								<li><span>2</span></li>
+								<li><span>3</span></li>
+								<li><span>4</span></li>
+								<li><span>5</span></li>
+							</ul>
+
+							<assessmentItem data-response-type="input" data-type="feedback" data-style="P:a x:45rem y:9.5rem Fs:2rem F:Nanum Fw:500 LH:6rem w:26rem">
+								<itemBody>
+									<input type="text"/>
+									<input type="text"/>
+									<input type="text"/>
+									<input type="text"/>
+									<input type="text"/>
+								</itemBody>
+								<assessFeedback>
+									<p data-style="Ta:c">박민선</p>
+									<p data-style="Ta:c">김유철</p>
+									<p data-style="Ta:c">김미선</p>
+									<p data-style="Ta:c">김상욱</p>
+									<p data-style="Ta:c">이재현</p>
+								</assessFeedback>
+								<button data-quick-btn="answerReset" data-style="P:a x:26rem y:-3rem">정답 보기/다시하기</button>
+							</assessmentItem>
+						</div>
+						
+						<popup 
+							data-mode="view" 
+							data-type="tip" 
+							data-id="v-1"
+							data-style="P:a r:0 b:2.0rem">
+							<span>Tip 보기</span>
+						</popup>
+						
+						<quizBtn data-type="exReset">
+							<span>정답 보기/다시하기</span>
+						</quizBtn>
+					</quiz>
+				</tabItem>
+				
+				
+
+				<tabItem>
+					<quiz id="q3">
+						<h1 data-subject="숫자">
+							<span>2</span>
+							<span>워크넷에서 직무 기반 직업 추천 검사를 해 보고, 추천받은 직업 중 관심 있는 직업 세 가지를 골라 적어 보자.</span>
+						</h1>
+						
+						<div role="table" data-style="w:100% h:42rem BG:images/page_015_2-2-2-3-1/bg-표2.png">
+					
+							<div role="thead">
+								<ul role="tr">
+									<li role="th"><span>모둠원 이름</span></li>
+									<li role="th"><span>관심 직업</span></li>
+									<li role="th"><span>기억에 남는 직업인</span></li>
+								</ul>
+							</div>
+							
+							<div role="tbody">
+								<ul role="tr">
+									<li role="td">
+										<!--보기 퀴즈-->
+										<assessmentItem data-response-type="input" data-type="feedback" data-style="w:100% h:100%">
+											<itemBody>
+												<textarea></textarea>
+											</itemBody>
+											<assessFeedback>
+												<p data-style="Ta:c pt:3rem">차민○</p>
+											</assessFeedback>
+											<button data-quick-btn="answerReset">정답 보기/다시하기</button>
+										</assessmentItem>
+									</li>
+
+									<li role="td">
+										<!--보기 퀴즈-->
+										<assessmentItem data-response-type="input" data-type="feedback" data-style="w:100% h:100%">
+											<itemBody>
+												<textarea></textarea>
+											</itemBody>
+											<assessFeedback>
+												<p data-style="Ta:c pt:3rem">미용사</p>
+											</assessFeedback>
+											<button data-quick-btn="answerReset">정답 보기/다시하기</button>
+										</assessmentItem>
+									</li>
+
+									<li role="td">
+										<!--보기 퀴즈-->
+										<assessmentItem data-response-type="input" data-type="feedback" data-style="w:100% h:100%">
+											<itemBody>
+												<textarea></textarea>
+											</itemBody>
+											<assessFeedback>
+												<p data-style="Ta:c pt:3rem">차홍, 이성규</p>
+											</assessFeedback>
+											<button data-quick-btn="answerReset">정답 보기/다시하기</button>
+										</assessmentItem>
+									</li>
+								</ul>
+
+								<ul role="tr">
+									<li role="td">
+										<!--보기 퀴즈-->
+										<assessmentItem data-response-type="input" data-type="feedback" data-style="w:100% h:100%">
+											<itemBody>
+												<textarea></textarea>
+											</itemBody>
+											<assessFeedback>
+												<p data-style="Ta:c pt:3rem">고서○</p>
+											</assessFeedback>
+											<button data-quick-btn="answerReset">정답 보기/다시하기</button>
+										</assessmentItem>
+									</li>
+
+									<li role="td">
+										<!--보기 퀴즈-->
+										<assessmentItem data-response-type="input" data-type="feedback" data-style="w:100% h:100%">
+											<itemBody>
+												<textarea></textarea>
+											</itemBody>
+											<assessFeedback>
+												<p data-style="Ta:c pt:3rem">약사</p>
+											</assessFeedback>
+											<button data-quick-btn="answerReset">정답 보기/다시하기</button>
+										</assessmentItem>
+									</li>
+
+									<li role="td">
+										<!--보기 퀴즈-->
+										<assessmentItem data-response-type="input" data-type="feedback" data-style="w:100% h:100%">
+											<itemBody>
+												<textarea></textarea>
+											</itemBody>
+											<assessFeedback>
+												<p data-style="Ta:c pt:3rem">장지나, 고기현</p>
+											</assessFeedback>
+											<button data-quick-btn="answerReset">정답 보기/다시하기</button>
+										</assessmentItem>
+									</li>
+								</ul>
+
+								<ul role="tr">
+									<li role="td">
+										<!--보기 퀴즈-->
+										<assessmentItem data-response-type="input" data-type="feedback" data-style="w:100% h:100%">
+											<itemBody>
+												<textarea></textarea>
+											</itemBody>
+											<assessFeedback>
+												<p data-style="Ta:c pt:3rem">김민○</p>
+											</assessFeedback>
+											<button data-quick-btn="answerReset">정답 보기/다시하기</button>
+										</assessmentItem>
+									</li>
+
+									<li role="td">
+										<!--보기 퀴즈-->
+										<assessmentItem data-response-type="input" data-type="feedback" data-style="w:100% h:100%">
+											<itemBody>
+												<textarea></textarea>
+											</itemBody>
+											<assessFeedback>
+												<p data-style="Ta:c pt:3rem">법률가</p>
+											</assessFeedback>
+											<button data-quick-btn="answerReset">정답 보기/다시하기</button>
+										</assessmentItem>
+									</li>
+
+									<li role="td">
+										<!--보기 퀴즈-->
+										<assessmentItem data-response-type="input" data-type="feedback" data-style="w:100% h:100%">
+											<itemBody>
+												<textarea></textarea>
+											</itemBody>
+											<assessFeedback>
+												<p data-style="Ta:c pt:3rem">허진영, 김준우</p>
+											</assessFeedback>
+											<button data-quick-btn="answerReset">정답 보기/다시하기</button>
+										</assessmentItem>
+									</li>
+								</ul>
+
+								<ul role="tr">
+									<li role="td">
+										<!--보기 퀴즈-->
+										<assessmentItem data-response-type="input" data-type="feedback" data-style="w:100% h:100%">
+											<itemBody>
+												<textarea></textarea>
+											</itemBody>
+											<assessFeedback>
+												<p data-style="Ta:c pt:3rem">이정○</p>
+											</assessFeedback>
+											<button data-quick-btn="answerReset">정답 보기/다시하기</button>
+										</assessmentItem>
+									</li>
+
+									<li role="td">
+										<!--보기 퀴즈-->
+										<assessmentItem data-response-type="input" data-type="feedback" data-style="w:100% h:100%">
+											<itemBody>
+												<textarea></textarea>
+											</itemBody>
+											<assessFeedback>
+												<p data-style="Ta:c pt:3rem">원예사</p>
+											</assessFeedback>
+											<button data-quick-btn="answerReset">정답 보기/다시하기</button>
+										</assessmentItem>
+									</li>
+
+									<li role="td">
+										<!--보기 퀴즈-->
+										<assessmentItem data-response-type="input" data-type="feedback" data-style="w:100% h:100%">
+											<itemBody>
+												<textarea></textarea>
+											</itemBody>
+											<assessFeedback>
+												<p data-style="Ta:c pt:3rem">고협경, 박혜은</p>
+											</assessFeedback>
+											<button data-quick-btn="answerReset">정답 보기/다시하기</button>
+										</assessmentItem>
+									</li>
+								</ul>
+							</div>
+						</div>
+						
+						<style>
+							#q3 [role="thead"]{
+								font-family:'Jamsil';
+								font-size:2.8rem;
+								font-weight:400;
+								color:#fff;
+								text-align:center;
+							}
+							#q3 [role="tbody"]{
+								font-family:'Nanum';
+								font-size:2.8rem;
+								font-weight:500;
+								text-align:center;
+							}
+							#q3 ul{
+								display:table;
+								clear:both;
+							}
+							#q3 ul>li{
+								float:left;
+								height:9.2rem;
+								
+							}
+							#q3 [role="thead"] ul>li{
+								height:4.7rem;
+								line-height:4.7rem;
+							}
+								#q3 [role="thead"] ul>li:nth-child(1){
+									width:21.8rem;
+								}
+								#q3 ul>li:nth-child(2){
+									width:7.7em;
+								}
+								#q3 ul>li:nth-child(3){
+									width:74.4rem;
+								}
+							#q3 [role="tbody"] ul>li:nth-child(1){
+								width:21.8rem;
+								text-align:center;
+								padding: 0 1rem;
+							}
+							#q3 [role="tbody"] ul:nth-child(2)>li{
+								height:9.5rem;
+								padding: 0 1rem;
+							}
+							#q3 [role="tbody"] ul:nth-child(3)>li{
+								height:9.5rem;
+								padding: 0 1rem;
+							}
+							#q3 [role="tbody"] ul:nth-child(4)>li{
+								height:9.3rem;
+								padding: 0 1rem;
+							}
+							#q3 [data-quick-btn]{
+								position:absolute;
+								right:-1rem; bottom:-0.5rem;
+							}
+							
+						</style>
+						
+						<quizBtn data-type="exReset">
+							<span>정답 보기/다시하기</span>
+						</quizBtn>
+					</quiz>
+				</tabItem>
+				
+				
+			</tab>
+		</section>
+		
+	<!--화면 뷰 영역 끝-->	
+	</article></main>
+	
+	<popupView 
+		data-id="v-1" 
+		data-color="진파랑" 
+		data-size="big">
+		
+		<h1>TIP</h1>
+		<div data-style="mt:2.0rem">
+			<h2>14쪽의 ‘직무 기반 직업 추천’에서 추천받은 직업을 참고하여 관심 직업을 정할 수 있다.</h2>
+		</div>
+	</popupView>
+	
+<!--컨테이너 끝-->
+</container></div></body></html>

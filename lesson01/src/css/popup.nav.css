@@ -1,0 +1,697 @@
+
+/**================================
+ * @date: 2023-11-13
+ * @description: 객체 함수 정의
+ * @copyright: 김동근
+ * @version:1.0
+ =================================**/
+
+/**================================
+ * 상단 요소  width:1280px; height:45px;
+ =================================**/
+
+.mainHeader{
+	position:absolute; left:0px; top:0px;
+	z-index:2;
+	width:100%; height:45px;
+	background-color:#c7defe;
+	border-radius:0 0 2.25rem 2.25rem; 
+}
+	/*-----------------*/
+	/**
+	 *  목차 패스
+	 */
+	.mainHeader .mainPath{
+		position:relative;
+		display:inline-block;
+		width:100%; height:100%;
+		font-family:'One';
+		text-align:center;
+	}	
+		.mainHeader .mainPath [data-depth="1"]{
+			display:inline-block;
+			padding-left:2.5rem;
+			position:absolute;
+			top:1.1rem;
+			left:2.0rem;
+		}
+		.mainHeader .mainPath [data-depth="1"]>span:nth-child(1){
+			width:1.6rem; height:1.6rem;
+			position:absolute; left:0px; top:0.2rem;
+			font-size:0px;
+		}
+			.mainHeader[data-dp="1"] .mainPath [data-depth="1"]>span:nth-child(1){
+				background-image:url('../com/images/nav/대단원-1.png');
+			}
+			.mainHeader[data-dp="2"] .mainPath [data-depth="1"]>span:nth-child(1){
+				background-image:url('../com/images/nav/대단원-2.png');
+			}
+			.mainHeader[data-dp="3"] .mainPath [data-depth="1"]>span:nth-child(1){
+				background-image:url('../com/images/nav/대단원-3.png');
+			}
+			
+		.mainHeader .mainPath [data-depth="1"]>span:nth-child(2){
+			line-height:2.2rem;
+			font-size:1.8rem;
+			font-weight:400;
+			letter-spacing:-0.6px;
+		}
+			
+				
+		.mainHeader .mainPath [data-depth="2"]{
+			display:inline-block;
+			position:relative;
+			width:70.0rem;
+			
+			height:23px;
+			line-height:23px;
+			margin-top:12px;
+			
+			font-size:18px;
+			font-weight:400;
+			text-align:center;
+		}	
+			.mainHeader .mainPath [data-depth="2"] [data-icon-d2]:after{
+				content:'.';
+				margin-right:0.7rem;
+			}
+			
+		
+	/*-----------------*/
+	/**
+	 * 	메인 정보
+	 */
+	.mainHeader .mainInfo{
+		display:inline-block;
+		position:absolute;
+		z-index:1;
+		right:95px; top:7px;
+		
+		width:125px; height:30px;
+		background-color:#fff;
+		border-radius:16px;
+	}
+		.mainHeader .mainInfo span:nth-child(1){
+			
+			display:inline-block;
+			width:16px; height:17px;
+			background-image:url('../com/images/nav/btn-book.png');
+			background-size:200% 100%;
+			
+			font-size:0;
+			position:absolute;
+			left:12px; top:6px;
+			
+		}
+		.mainHeader .mainInfo span:nth-child(2){
+			
+			font-family:'Gmarket';
+			font-size:1.4rem;
+			line-height:2.2rem;
+			font-weight:500;
+			
+			position:absolute; 
+			right:30px; top:5px;
+		}
+		.mainHeader .mainInfo span:nth-child(3){
+			
+			font-family:'One';
+			font-size:1.4rem;
+			line-height:2.2rem;
+			font-weight:400;
+			
+			position:absolute; right:13px; top:4px;
+		}
+		
+	/*-----------------*/
+	/**
+	 *  네비 버튼
+	 */
+	.mainHeader .mainBtn{
+		display:inline-block;
+		position:absolute;
+		z-index:2;
+		right:0px; top:0px;
+	}
+		.mainHeader .mainBtn button[data-type="mainHelper"]{
+			position:absolute;
+			right:53px; top:6px;
+			width:32px; height:30px;
+			font-size:0px;
+			background-image:url('../com/images/nav/btn-class-helper.png');
+		}
+		.mainHeader .mainBtn button[data-type="mainClose"]{
+			position:absolute;
+			right:15px; top:6px;
+			width:32px; height:30px;
+			font-size:0px;
+			background-image:url('../com/images/nav/btn-close.png');
+		}
+	/*-----------------*/
+	.mainHeader .mainSide{
+		display:none;
+		position:absolute;
+		width:100%;
+		height:5.2rem;
+		line-height:5.2rem;
+		left:0px; top:4.5rem;
+		border-radius:26.0rem;
+		background-color:#f6f6f6;
+		box-shadow: 0 0.3rem 0.3rem rgba(0,0,0,0.1);
+	}
+		.mainHeader .mainSide>div{
+			display:-webkit-box !important;
+			display:-moz-box !important;
+			display:-ms-flexbox !important;
+			display:flex !important;
+			
+			-webkit-box-pack:center;
+			-moz-box-justify-content:center;
+			-ms-flex-pack:center;
+			justify-content:center;
+			
+			-webkit-box-align:center;
+			-moz-align-items:center;
+			-ms-flex-align:center;
+			align-items:center;
+		}
+		.mainHeader .mainSide>div>span{
+			font-size:2.0rem;
+			line-height:3.0rem;
+			font-weight:600;
+			margin-right:2.0rem;
+			position:relative;
+			top:-0.2rem;
+		}
+		.mainHeader .mainSide>div>span:before{
+			content:'';
+			width:2.8rem;
+			height:2.2rem;
+			position:relative;
+			background-image:url('../com/images/nav/icon-수업 도우미.png');
+			margin-right:1.0rem;
+			top:0.6rem;
+		}
+		.mainHeader .mainSide>div>button{
+			height:1.8rem; line-height:1.8rem;
+			
+			font-size:1.8rem;
+			font-weight:500;
+			color:#666;
+			
+			margin:1.7rem 0;
+			padding:0 0.8rem;
+		}
+		.mainHeader .mainSide>div>button:hover{
+			color:#c44a00;
+		}
+		.mainHeader .mainSide>div>button+button{
+			border-left:0.2rem solid #666;
+		}
+		
+/**================================
+ * 하단 요소  width:1280px; height:40px;
+ =================================**/
+/**
+ * 	하단 버튼 컨테이너
+ */
+.mainFooter{
+	position:absolute; 
+	left:0; bottom:0;
+	width:100%; height:4.0rem;
+	
+	background-color:#5497ff;
+	border-radius:2.5rem 2.5rem 0 0; 
+}
+	/*-----------------*/	
+	/**
+	 *  목차 버튼
+	 */
+	.mainFooter .mainBtn{
+		display:inline-block;
+		position:absolute;
+		left:1.5rem; top:0.4rem;
+	}
+		.mainFooter .mainBtn button{
+			display:inline-block;
+			font-size:0px;
+			width:3.7rem; height:3.5rem;
+			background-image:url('../com/images/nav/btn-index.png');
+		}
+	/*-----------------*/	
+	/**
+	 * 	퀵 메뉴 리스트
+	 */
+	.mainFooter .mainQuick{
+		display:inline-block;
+		position:absolute;
+		left:15.0rem; top:0rem;
+		letter-spacing:0;
+	}
+		.mainFooter .mainQuick:before{
+			content:'';
+			display: inline-block;
+			width:6.4rem; height:5.9rem;
+			position:absolute;
+			left:-8.0rem; top:-1.9rem;
+			background-image:url('../com/images/nav/ch-정면.png');
+		}
+		.mainFooter .mainQuick button{
+			height:4.0rem;
+			
+			font-family:'One';
+			font-size:1.6rem;
+			line-height:4.4rem;
+			text-align:center;
+			padding:0px 10px;
+			color:#fff;
+		}
+		.mainFooter .mainQuick button.on{
+			color:#00fcff;
+		}
+		.mainFooter .mainQuick button>em{
+			position:absolute;
+			left:0; top:0;
+			display:inline-block;
+			width:100%; height:0;
+			text-align:center;
+			font-size:0;
+		}
+		.mainFooter .mainQuick button.on>em:after{
+			content:'';
+			display:inline-block;
+			width:3.9rem; height:1.1rem;
+			background-image:url('../com/images/nav/퀵-선택효과.png');
+			position:relative;
+			top:-1.2rem;
+		}
+		.mainFooter .mainQuick button+button{
+			margin-left:16px;
+		}
+		
+	/*-----------------*/	
+	/**
+	 * 	목차 콘텐츠
+	 */
+	.mainFooter .mainInfo{
+		position:relative;
+		display:inline-block;
+		float:right;
+		margin-right:15px;
+		margin-top:6px;
+		
+		width:116px; height:29px;
+	}
+		.mainFooter .mainInfo>*{
+			position:absolute;
+		}
+		.mainFooter .mainInfo button{
+			width:2.6rem; height:2.9rem;
+			font-size:0px;
+			z-index:1;
+		}	
+			.mainFooter .mainInfo button[tabIndex="-1"]{
+				background-position-x:100%;
+				cursor:default; opacity:0.4;
+			}
+			.mainFooter .mainInfo button[data-type="mainPrev"]{
+				background-image:url('../com/images/nav/btn-nav-p.png');
+				left:0; top:0;
+			}
+			.mainFooter .mainInfo button[data-type="mainNext"]{
+				background-image:url('../com/images/nav/btn-nav-n.png');
+				right:0; top:0;
+			}
+
+		.mainFooter .mainInfo>p{
+			position:relative;
+			display:inline-block;
+			
+			width:100%;
+			height:2.0rem;
+			
+			font-family:'Gmarket';
+			font-size:1.6rem;
+			color:#fff;
+			line-height:2.0rem;
+			text-align:center;
+			margin-top:0.7rem;
+		}
+			.mainFooter .mainInfo p>.mainCnt{
+				margin-right:0.4rem;
+			}
+			.mainFooter .mainInfo p>.mainCut{
+				font-size:0;
+				display:inline-block;
+				background-image:url('../com/images/nav/페이지-cut.png');
+				width:0.9rem; height:1.4rem;
+				position:relative;
+				top:0.1rem;
+			}
+			.mainFooter .mainInfo p>.mainMax{
+				margin-left:0.4rem;
+			}
+			
+/**================================
+ * 목차 리스트  width:1280px; height:720px;
+ =================================**/
+.mainIndex{
+	display:block;
+	position:absolute; left:0px; top:0px;
+	z-index:999;
+	line-height:0;
+	width:100%; height:100%;
+	background-color:rgba(0,0,0,0.5);
+}
+	/*-------------------------------*/
+	
+	.mainIndex .indexHeader{
+		position:relative;
+		width:100%; height:45px;
+	}
+	.mainIndex .indexHeader>*{
+		display:none;
+	}
+	
+	/*-------------------------------*/
+	
+	.mainIndex .indexView{
+		position:relative;
+		width:100%; height:63.0rem;
+		margin-left:4.0rem; 
+	}
+	.mainIndex[data-d1="1"] .indexView{
+		margin-top:6.5rem;
+	}
+	.mainIndex[data-d1="2"] .indexView{
+		margin-top:1.0rem;
+	}
+	.mainIndex[data-d1="3"] .indexView{
+		margin-top:6.5rem;
+	}
+/*-------------------------------*/
+.mainIndex .indexView>.view-1{
+	position:absolute;
+	z-index:2;
+	width:44.8rem;
+}	
+	/*-------------------------------*/
+	
+	.view-1 .dp-1>li{
+		position:relative;
+		background-color:#ffffff;
+		border-radius:1.0rem;
+	}
+	.view-1 .dp-1>li:before{
+		content:'';
+		width:100%; height:2.0rem;
+		background-image:url('../com/images/index/대단원-하단.png');
+		position:absolute;
+		left:0; bottom:0rem;
+	}
+	.view-1 .dp-1>li>*{
+		position:relative;
+		z-index:1;
+	}
+	
+		.view-1 .dp-1>li+li{
+			margin-top:6px;
+		}
+		
+	
+	.mainIndex .view-1 [data-index-item="1"]{
+		width:100%; height:66px;
+		font-family:'One';
+		font-size:2.2rem;
+		line-height:36px;
+		position:relative;
+	}
+	.view-1 .dp-1>li.on [data-index-item="1"]{
+		border-radius:1.0rem 1.0rem 0 0;
+	}
+	.mainIndex[data-d1="1"] .view-1 .dp-1>li.on [data-index-item="1"]{
+		background-color:#ffd7a6;
+	}
+	.mainIndex[data-d1="2"] .view-1 .dp-1>li.on [data-index-item="1"]{
+		background-color:#b6f4e6;
+	}
+	.mainIndex[data-d1="3"] .view-1 .dp-1>li.on [data-index-item="1"]{
+		background-color:#ffcae9;
+	}
+	
+	.view-1 li>[data-index-item="1"]:after{
+		content:'';
+		width:1.4rem; height:0.8rem;
+		position:absolute;
+		right:2.5rem; top:2.8rem;
+	}
+		.mainIndex .view-1 li:nth-child(1)>[data-index-item="1"]:after{
+			background-image:url('../com/images/index/arrow-1단원.png');
+		}
+		.mainIndex .view-1 li:nth-child(2)>[data-index-item="1"]:after{
+			background-image:url('../com/images/index/arrow-2단원.png');
+		}
+		.mainIndex .view-1 li:nth-child(3)>[data-index-item="1"]:after{
+			background-image:url('../com/images/index/arrow-3단원.png');
+		}
+	.view-1 li.on>[data-index-item="1"]:after{
+		content:'';
+		width:8.8rem; height:8.1rem;
+		position:absolute;
+		right:1.4rem; top:-1.5rem;
+	}
+		.mainIndex[data-d1="1"] .view-1 li.on>[data-index-item="1"]:after{
+			background-image:url('../com/images/index/ch-로봇-1단원.png');
+		}
+		.mainIndex[data-d1="2"] .view-1 li.on>[data-index-item="1"]:after{
+			background-image:url('../com/images/index/ch-로봇-2단원.png');
+		}
+		.mainIndex[data-d1="3"] .view-1 li.on>[data-index-item="1"]:after{
+			background-image:url('../com/images/index/ch-로봇-3단원.png');
+		}
+	
+	
+		/*대단원 색*/
+		.mainIndex .view-1 [data-index-item="1"]>.icon{
+			display:inline-block;
+			width:3.2rem; height:3.8rem;
+			font-size:0;
+			margin-left:1.5rem;
+			margin-right:0.8rem;
+		}
+		.mainIndex .view-1 li:nth-child(1) [data-index-item="1"]>.icon{
+			background-image:url('../com/images/index/icon-1단원.png');
+		}
+		.mainIndex .view-1 li:nth-child(2) [data-index-item="1"]>.icon{
+			background-image:url('../com/images/index/icon-2단원.png');
+		}
+		.mainIndex .view-1 li:nth-child(3) [data-index-item="1"]>.icon{
+			background-image:url('../com/images/index/icon-3단원.png');
+		}
+			.mainIndex .view-1 li:hover>[data-index-item="1"]>.icon,
+			.mainIndex .view-1 li.on>[data-index-item="1"]>.icon{
+				background-position-x:100%;
+				color:#fff;
+			}
+		.mainIndex .view-1 [data-index-item="1"]>.text{
+			position:relative;
+			top:0.2rem;
+		}
+		
+	/*-------------------------------*/
+	.view-1 .dp-1>li>ul{
+		display:none; 
+		padding:1.0rem 1.5rem 1.5rem 1.5rem;
+	}
+	.view-1 .dp-1>li.on>ul{
+		display:block;
+	}
+	.view-1 .dp-2>li+li{
+		margin-top:0.8rem;
+	}
+	.mainIndex .view-1 [data-index-item="2"]{
+		
+		width:100%;
+		
+		font-family:'Jamsil';
+		font-size:2.2rem; 
+		line-height:3.0rem;
+		color:#1c1c1c;
+		
+		padding:0.3rem 1.0rem 0.2rem 3.5rem;
+		
+		border-radius:0.5rem;
+		letter-spacing:-0.1rem;
+	}
+	.mainIndex .view-1 li.on>[data-index-item="2"],
+	.mainIndex .view-1 li:hover>[data-index-item="2"]{
+		
+		color: #fff;
+		font-weight:300;
+	}
+	.mainIndex[data-d1="1"] .view-1 li.on>[data-index-item="2"],
+	.mainIndex[data-d1="1"] .view-1 li:hover>[data-index-item="2"]{
+		background-color: #ffb41b;
+	}
+	.mainIndex[data-d1="2"] .view-1 li.on>[data-index-item="2"],
+	.mainIndex[data-d1="2"] .view-1 li:hover>[data-index-item="2"]{
+		background-color: #00bbc2;
+	}
+	.mainIndex[data-d1="3"] .view-1 li.on>[data-index-item="2"],
+	.mainIndex[data-d1="3"] .view-1 li:hover>[data-index-item="2"]{
+		background-color: #fe7bbf;
+	}
+	
+		.mainIndex .view-1 [data-index-item="2"]>.icon{
+			font-family:'Gmarket';
+			font-weight:500;
+			margin-right:0.8rem;
+			position:relative;
+			top:0.1rem;
+		}
+		.mainIndex[data-d1="1"] .view-1 [data-index-item="2"]>.icon{
+			color:#f87f20;
+		}
+		.mainIndex[data-d1="2"] .view-1 [data-index-item="2"]>.icon{
+			color:#179499;
+		}
+		.mainIndex[data-d1="3"] .view-1 [data-index-item="2"]>.icon{
+			color:#c6579c;
+		}
+		.mainIndex .view-1 li.on>[data-index-item="2"]>.icon,
+		.mainIndex .view-1 li:hover>[data-index-item="2"]>.icon{
+			color:#ffffff;
+		}
+		.mainIndex .view-1 [data-index-item="2"]>.icon[about="특집"]{
+			display:none;
+		}	
+		
+	/*-------------------------------*/
+	/*-------------------------------*/
+	/*-------------------------------*/
+	
+.mainIndex .indexView>.view-2{
+	position:absolute;
+	z-index:1;
+	left:46.2rem; top:0px;
+	
+	width:44.0rem; height:auto;
+	padding:2.2rem;
+	
+	border-radius:1.5rem;
+	background-color:#fff;
+}
+.mainIndex[data-d1="1"] .indexView>.view-2{
+	border:5px solid #ffd7a6;
+}
+.mainIndex[data-d1="2"] .indexView>.view-2{
+	border:5px solid #b7eff2;
+}
+.mainIndex[data-d1="3"] .indexView>.view-2{
+	border:5px solid #fdcfeb;
+}
+	.mainIndex  button[data-type="viewClose"]{
+		width:2.5rem; height:2.5rem;
+		position:absolute;
+		right:0.5rem; top:0.5rem;
+		font-size:0;
+	}
+	.mainIndex[data-d1="1"]  button[data-type="viewClose"]{
+		background-image:url('../com/images/index/닫기-1단원.png');
+	}
+	.mainIndex[data-d1="2"]  button[data-type="viewClose"]{
+		background-image:url('../com/images/index/닫기-2단원.png');
+	}
+	.mainIndex[data-d1="3"]  button[data-type="viewClose"]{
+		background-image:url('../com/images/index/닫기-3단원.png');
+	}
+	
+	.view-2 .dp-1>li>ul{
+		margin-top:0.7rem;
+	}
+	.view-2 .dp-1>li+li{
+		margin-top:1.0rem;
+	}
+	
+	.mainIndex .view-2 [data-index-item="1"]{
+		display:inline-block;
+		position:relative;
+		
+		font-size:1.8rem; 
+		font-weight:400;
+		line-height:3.0rem;
+		
+		border-radius:10.0rem;
+		padding:0.1rem 1.8rem 0 1.8rem;
+	}
+	.mainIndex[data-d1="1"] .view-2 [data-index-item="1"]{
+		background-color:#ffd7a6;
+		color:#c34913;
+	}
+	.mainIndex[data-d1="2"] .view-2 [data-index-item="1"]{
+		background-color:#b6f0f2;
+		color:#236f73;
+	}
+	.mainIndex[data-d1="3"] .view-2 [data-index-item="1"]{
+		background-color:#fcceea;
+		color:#b5317d;
+	}	
+	/*-------------------------------*/
+	.view-2 .dp-2>li+li{
+		margin-top:0.5rem;
+	}
+	
+	.mainIndex .view-2 .dp-2{
+		margin-left:0.5rem;
+		padding-left:1.2rem;
+	}
+	
+	.mainIndex .view-2 [data-index-item="2"]{
+		font-family:'Jamsil';
+		font-size:2.0rem; 
+		line-height:3.0rem;
+		color:#1c1c1c;
+	}
+	.mainIndex[data-d1="1"] .view-2 li.on>[data-index-item="2"],
+	.mainIndex[data-d1="1"] .view-2 li:hover>[data-index-item="2"]{
+		color:#f88023;
+	}
+	.mainIndex[data-d1="2"] .view-2 li.on>[data-index-item="2"],
+	.mainIndex[data-d1="2"] .view-2 li:hover>[data-index-item="2"]{
+		color:#00adb3;
+	}
+	.mainIndex[data-d1="3"] .view-2 li.on>[data-index-item="2"],
+	.mainIndex[data-d1="3"] .view-2 li:hover>[data-index-item="2"]{
+		color:#fa58ac;
+	}
+		
+		.mainIndex .view-2 [data-index-item="2"]>.icon:after{
+			content:'|';
+			margin:0px 4px;
+			color:#a5a5a5;
+		}
+		.mainIndex[data-d1="1"] .view-2 li.on>[data-index-item="2"]>.icon:after,
+		.mainIndex[data-d1="1"] .view-2 li:hover>[data-index-item="2"]>.icon:after{
+			color:#f88023;
+		}
+		.mainIndex[data-d1="2"] .view-2 li.on>[data-index-item="2"]>.icon:after,
+		.mainIndex[data-d1="2"] .view-2 li:hover>[data-index-item="2"]>.icon:after{
+			color:#00adb3;
+		}
+		.mainIndex[data-d1="3"] .view-2 li.on>[data-index-item="2"]>.icon:after,
+		.mainIndex[data-d1="3"] .view-2 li:hover>[data-index-item="2"]>.icon:after{
+			color:#fa58ac;
+		}
+	
+/*-------------------------------*//*-------------------------------*/		
+.mainIndex .indexFooter{
+	position:absolute;
+	left:0; bottom:4.0rem;
+}
+	.mainIndex .indexFooter button[data-type="indexClose"]{
+		position: absolute;
+		font-size:0;
+	    left: 1.5rem; top: 0.4rem;
+		width: 3.7rem; height: 3.5rem;
+		background-image:url('../com/images/index/close-index.png');
+	}

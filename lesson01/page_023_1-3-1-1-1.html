@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!--메타 데이타-->
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta name="viewport" content="width=1280, height=720">
+  	<!--CSS-->
+	<link rel="stylesheet" type="text/css" href="./src/css/module.fonts.css" />
+	<link rel="stylesheet" type="text/css" href="./src/css/module.skill.css" />
+	<link rel="stylesheet" type="text/css" href="./src/css/popup.nav.css" />
+	<link rel="stylesheet" type="text/css" href="./src/css/popup.view.css" />
+	<link rel="stylesheet" type="text/css" href="./src/css/screen.css" />
+	<!--DATAS-->
+	<script type="text/javascript" src="src/datas/datas.index.js" ></script>
+    <!--MODULE-->
+    <script type="text/javascript" src="../../../../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../../../../js/binder_web.min.js"></script>
+	<script type="text/javascript" src="src/js/module.fn.js" ></script>
+	<script type="text/javascript" src="src/js/popup.navi.js" ></script>
+	<script type="text/javascript" src="src/js/popup.view.js" ></script>
+</head>
+
+<!--컨테이너 시작-->
+<body><div><container>
+
+	<!--화면 뷰 영역 시작--><!--기본 디자인 설정--->
+	<main><article id="mainView" data-design="">
+		
+		<!--모든 해더 내용 입력 필수--->
+	    <header>
+	    	<h1 data-subject="중앙" data-style="Fc:#5b241c"><span>진로 특성을 발견하는 질문</span></h1>
+	    </header>
+	    	
+		<!--본문 내용--->
+		<section>
+			
+			<div data-style="D:ib w:44.7rem h:51.1rem BG:images/page_023_1-3-1-1-1/bg.png mt:10 ml:35rem">
+				<p data-style="F:Gangwon Fs:2.7rem P:a x:48.5rem y:12.7rem">나의 진로 특성 중 강점과 약점은 무엇일까?</p>
+
+				<div data-style="P:a x:7rem y:17rem F:Nanum Fs:2.6rem Fw:600 LH:10rem Ta:l B:3px,solid,#ef728a pr:15rem pl:7rem py:4rem Br:50">
+					<p data-style="P:a x:10rem y:-5rem BGc:#fff px:1rem">내적 요인</p>
+					<ul data-type="소점">
+						<li data-style="F:Nanum Fs:2.6rem Fw:600 LH:10rem">
+							<span>*</span>
+							<p>흥미</p>
+							<popup 
+								data-mode="view" 
+								data-type="설명" 
+								data-id="p-1"
+								data-style="P:a x:9.5rem y:2rem">
+								<span>팝업 보기</span>
+							</popup>
+						</li>
+						
+						<li data-style="F:Nanum Fs:2.6rem Fw:600 LH:10rem">
+							<span>*</span>
+							<p>적성</p>
+							<popup 
+								data-mode="view" 
+								data-type="설명" 
+								data-id="p-2"
+								data-style="P:a x:9.5rem y:2rem">
+								<span>팝업 보기</span>
+							</popup>
+						</li>
+
+						<li data-style="F:Nanum Fs:2.6rem Fw:600 LH:10rem">
+							<span>*</span>
+							<p>가치관</p>
+							<popup 
+								data-mode="view" 
+								data-type="설명" 
+								data-id="p-3"
+								data-style="P:a x:11.5rem y:2rem">
+								<span>팝업 보기</span>
+							</popup>
+						</li>
+					</ul>
+				</div>
+
+				<div data-style="P:a x:88rem y:17rem F:Nanum Fs:2.6rem Fw:600 LH:10rem Ta:l B:3px,solid,#7fb23c pr:8rem pl:4rem py:4rem Br:50">
+					<p data-style="P:a x:10rem y:-5rem BGc:#fff px:1rem">외적 요인</p>
+					<ul data-type="소점">
+						<li data-style="F:Nanum Fs:2.6rem Fw:600 LH:10rem">
+							<span>*</span>
+							<p>신체적 요인</p>
+							<popup 
+								data-mode="view" 
+								data-type="설명" 
+								data-id="p-4"
+								data-style="P:a x:16.5rem y:2rem">
+								<span>팝업 보기</span>
+							</popup>
+						</li>
+						
+						<li data-style="F:Nanum Fs:2.6rem Fw:600 LH:10rem">
+							<span>*</span>
+							<p>가족</p>
+							<popup 
+								data-mode="view" 
+								data-type="설명" 
+								data-id="p-5"
+								data-style="P:a x:9.5rem y:2rem">
+								<span>팝업 보기</span>
+							</popup>
+						</li>
+
+						<li data-style="F:Nanum Fs:2.6rem Fw:600 LH:10rem">
+							<span>*</span>
+							<p>사회·경제적 환경</p>
+							<popup 
+								data-mode="view" 
+								data-type="설명" 
+								data-id="p-6"
+								data-style="P:a x:21.5rem y:2rem">
+								<span>팝업 보기</span>
+							</popup>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		
+		<style>
+			ul[data-type="소점"]>li>*:nth-child(1){
+				top: 3.7rem;
+			}
+		</style>
+	<!--화면 뷰 영역 끝-->	
+	</article></main>
+	
+	<popupView data-id="p-1" data-color="자주">
+		
+		<h1><span>흥미</span></h1>
+		
+		<div>
+			<h2 data-style="mt:2.0rem">내가 가장 좋아하는 것은 무엇일까?</h2>
+		</div>
+		
+	</popupView>
+	
+	<popupView data-id="p-2" data-color="자주">
+		
+		<h1><span>적성</span></h1>
+		
+		<div>
+			
+			<h2 data-style="mt:2.0rem">내가 가장 잘할 수 있는 것은 무엇일까?</h2>
+		</div>
+		
+	</popupView>
+	
+	<popupView data-id="p-3" data-color="자주">
+		
+		<h1><span>가치관</span></h1>
+		
+		<div>
+			<h2 data-style="mt:2.0rem">내가 삶에서 가장 중요하게 생각하는 것은 무엇일까?</h2>
+		</div>
+		
+	</popupView>
+	
+	<popupView data-id="p-4" data-color="녹두">
+		
+		<h1><span>신체적 요인</span></h1>
+		
+		<div>
+			
+			<h2 data-style="mt:2.0rem">나의 신체 조건 중 희망 직업에 강점 또는 약점이 될 수 있는 것은 무엇일까?</h2>
+		</div>
+		
+	</popupView>
+
+	<popupView data-id="p-5" data-color="녹두">
+		
+		<h1><span>가족</span></h1>
+		
+		<div>
+			<h2 data-style="mt:2.0rem">내가 하고 싶은 일과 부모님이 원하는 직업 중 어떤 것을 선택해야 할까?</h2>
+		</div>
+		
+	</popupView>
+	
+	<popupView data-id="p-6" data-color="녹두">
+		
+		<h1><span>사회·경제적 환경</span></h1>
+		
+		<div>
+			
+			<h2 data-style="mt:2.0rem">나의 주변 환경 또는 경제적 상황은 나의 진로에 어떤 영향을 미칠까?</h2>
+		</div>
+		
+	</popupView>
+<!--컨테이너 끝-->
+</container></div></body></html>

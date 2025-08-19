@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!--메타 데이타-->
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta name="viewport" content="width=1280, height=720">
+  	<!--CSS-->
+	<link rel="stylesheet" type="text/css" href="./src/css/module.fonts.css" />
+	<link rel="stylesheet" type="text/css" href="./src/css/module.skill.css" />
+	<link rel="stylesheet" type="text/css" href="./src/css/popup.nav.css" />
+	<link rel="stylesheet" type="text/css" href="./src/css/popup.view.css" />
+	<link rel="stylesheet" type="text/css" href="./src/css/screen.css" />
+	<!--DATAS-->
+	<script type="text/javascript" src="src/datas/datas.index.js" ></script>
+    <!--MODULE-->
+    <script type="text/javascript" src="../../../../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../../../../js/binder_web.min.js"></script>
+	<script type="text/javascript" src="src/js/module.fn.js" ></script>
+	<script type="text/javascript" src="src/js/popup.navi.js" ></script>
+	<script type="text/javascript" src="src/js/popup.view.js" ></script>
+</head>
+
+<!--컨테이너 시작-->
+<body><div><container>
+
+	<!--화면 뷰 영역 시작--><!--기본 디자인 설정--->
+	<main><article id="mainView" data-design="">
+		
+		<!--모든 해더 내용 입력 필수--->
+	    <header>
+	    	<h1 data-subject="중앙" data-style="Fc:#5b241c"><span>직업 현장에서 발생할 수 있는 정서적 어려움</span></h1>
+	    </header>
+	    	
+		<!--본문 내용--->
+		<section data-style="center">
+			
+			<div data-style="D:ib w:92.4rem h:51.0rem BG:images/page_038_1-4-2-2-2/bg.png mt:10 Br:30">
+				<ul data-style="P:r F:Nanum Fs:1.5rem Fw:600 LS:-0.1rem">
+					
+					<li data-style="P:a x:15.2rem y:20rem">
+						
+						<p>장시간 노동</p>
+						
+						<div class="one aa">
+							<popup 
+								data-mode="view" 
+								data-type="설명" 
+								data-id="p-1"
+								data-style="P:a x:-0.5rem y:-7rem z:1">
+								<span>팝업 보기</span>
+							</popup>
+
+							<img src="./images/page_038_1-4-2-2-2/bg-04.png" alt="장시간 노동" data-style="w:147 P:a x:-82 y:-50" class="image-to-enlarge"/>
+						</div>
+					</li>
+					
+					<li data-style="P:a x:42.7rem y:20.9rem">
+						
+						<p>폭언 · 폭력</p>
+						
+						<div class="two aa">
+							<popup 
+								data-mode="view" 
+								data-type="설명" 
+								data-id="p-2"
+								data-style="P:a x:-6.5rem y:-4rem z:1">
+								<span>팝업 보기</span>
+							</popup>
+
+							<img src="./images/page_038_1-4-2-2-2/bg-05.png" alt="폭언 · 폭력" data-style="w:137 P:a x:-120 y:25" class="image-to-enlarge"/>
+						</div>
+					</li>
+					
+					<li data-style="P:a x:58.7rem y:24rem">
+						
+						<p>성희롱</p>
+						
+						<div class="thr aa">
+							<popup 
+								data-mode="view" 
+								data-type="설명" 
+								data-id="p-3"
+								data-style="P:a x:-6rem y:-5rem z:1">
+								<span>팝업 보기</span>
+							</popup>
+
+							<img src="./images/page_038_1-4-2-2-2/bg-03.png" alt="성희롱" data-style="w:189 P:a x:-10 y:-35" class="image-to-enlarge"/>
+						</div>
+					</li>
+					
+					<li data-style="P:a x:70.1rem y:7.1rem">
+						
+						<p>강요</p>
+						
+						<div class="four aa">
+							<popup 
+								data-mode="view" 
+								data-type="설명" 
+								data-id="p-4"
+								data-style="P:a x:3.5rem y:-2rem z:2">
+								<span>팝업 보기</span>
+							</popup>
+
+							<img src="./images/page_038_1-4-2-2-2/bg-02.png" alt="성희롱" data-style="w:278 P:a x:-110 y:15" class="image-to-enlarge"/>
+						</div>
+					</li>
+				</ul>
+
+				<popup 
+					data-mode="view" 
+					data-type="tip" 
+					data-id="v-1"
+					data-style="P:a r:5rem b:2.0rem">
+					<span>Tip 보기</span>
+				</popup>
+			</div>
+
+			<style>
+				/* popup에 마우스를 올렸을 때 그 안의 이미지를 확대 */
+				.aa:hover .image-to-enlarge {
+					transform: scale(1.1);
+					transition: transform 0.5s; /* 부드러운 확대 효과 */
+				}
+
+				.image-to-enlarge:hover {
+					transform: none !important;
+				}
+			</style>			
+		</section>
+		
+	<!--화면 뷰 영역 끝-->	
+	</article></main>
+	<popupView 
+		data-id="v-1" 
+		data-color="진파랑" 
+		data-size="big">
+		
+		<h1>TIP</h1>
+		<div data-style="mt:2.0rem O:a h:300">
+			<h2 data-style="Ta:c">직장 내 괴롭힘 발생 시 고용주의 의무</h2>
+
+			<ul data-type="소점" data-style="mt:3.0rem">
+				<li>
+					<span>*</span>
+					<p>지체 없이 사실 확인을 위한 객관적 조사를 실시해야 한다.</p>
+				</li>
+				<li>
+					<span>*</span>
+					<p>피해자를 보호하기 위해 필요하다면 근무 장소 변경, 유급휴가 명령 등을 조치한다.</p>
+				</li>
+				<li>
+					<span>*</span>
+					<p>괴롭힘이 확인된 경우에는 피해 근로자가 요청하면 근무 장소 변경 등 필요한 조취를 취한다.</p>
+				</li>
+				<li>
+					<span>*</span>
+					<p>신고한 근로자 및 피해 근로자 등에게 해고나 그 밖의 불리한 처우를 하면 안된다.</p>
+				</li>
+			</ul>
+
+			<p data-style="Ta:r F:Nanum Fs:4.0rem Fw:500 mt:3rem LH:6rem"><img src="./images/page_038_1-4-2-2-2/tip.png" alt="tip" data-style="w:5rem"/> 교과서 46쪽의 “근로자 예방 및 보호 조치” 참고</p>
+		</div>
+	</popupView>
+
+	<popupView data-id="p-1" data-color="남색">
+		
+		<h1><span>장시간 노동</span></h1>
+		
+		<div>
+			<h2 data-style="mt:2.0rem">연장, 야간 및 휴일 근무 등 장시간 노동은 근로자의 삶의 질을 저하시키며, 신체적·정신적 건강 문제를 유발할 수 있다.</h2>
+		</div>
+		
+	</popupView>
+	
+	<popupView data-id="p-2" data-color="남색">
+		
+		<h1><span>폭언·폭력</span></h1>
+		
+		<div>
+			<h2 data-style="mt:2.0rem">신체에 대한 물리적인 고통, 상해만이 폭행에 해당하는 것은 아니며 사용자의 지속적인 언어폭력(폭언 등)도 근로기준법에서 금지하는 폭행금지의무 위반에 해당한다.</h2>
+		</div>
+		
+	</popupView>
+	
+	<popupView data-id="p-3" data-color="남색">
+		
+		<h1><span>성희롱</span></h1>
+		
+		<div data-style="O:a h:260">
+			<h2 data-style="mt:2.0rem">직장 내의 지위를 이용하거나 업무와 관련하여 다른 근로자에게 성적 언동 등으로 성적 굴욕감 또는 혐오감을 느끼게 하거나 그 밖의 요구 등에 따르지 않았다는 이유로 근로 조건 및 고용에서 불이익을 주는 것을 의미한다.</h2>
+		</div>
+		
+	</popupView>
+	
+	<popupView data-id="p-4" data-color="남색">
+		
+		<h1><span>강요</span></h1>
+		
+		<div>
+			<h2 data-style="mt:2.0rem">불필요한 추가 근무 강요, 정당한 이유 없이 부서 이동 또는 퇴사 강요, 음주·흡연·회식 참여 강요, 사적 용무 지시 등은 직장 내 괴롭힘에 해당한다.</h2>
+		</div>
+		
+	</popupView>
+<!--컨테이너 끝-->
+</container></div></body></html>

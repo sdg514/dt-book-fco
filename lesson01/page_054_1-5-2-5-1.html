@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!--메타 데이타-->
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta name="viewport" content="width=1280, height=720">
+  	<!--CSS-->
+	<link rel="stylesheet" type="text/css" href="./src/css/module.fonts.css" />
+	<link rel="stylesheet" type="text/css" href="./src/css/module.skill.css" />
+	<link rel="stylesheet" type="text/css" href="./src/css/popup.nav.css" />
+	<link rel="stylesheet" type="text/css" href="./src/css/popup.view.css" />
+	<link rel="stylesheet" type="text/css" href="./src/css/screen.css" />
+	<!--DATAS-->
+	<script type="text/javascript" src="src/datas/datas.index.js" ></script>
+    <!--MODULE-->
+    <script type="text/javascript" src="../../../../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../../../../js/binder_web.min.js"></script>
+	<script type="text/javascript" src="src/js/module.fn.js" ></script>
+	<script type="text/javascript" src="src/js/popup.navi.js" ></script>
+	<script type="text/javascript" src="src/js/popup.view.js" ></script>
+    
+    <link rel="stylesheet" type="text/css" href="images/page_055_1-5-2-5-1/game.css" />
+	<script type="text/javascript" src="images/page_055_1-5-2-5-1/game.js" ></script>
+</head>
+
+
+<!--컨테이너 시작-->
+<body><div><container>
+
+	<!--화면 뷰 영역 시작--><!--기본 디자인 설정--->
+	<main><article id="mainView" data-design="게임">
+		<!--모든 해더 내용 입력 필수--->
+	    <header>
+	    	<h1 data-subject=""><span>미래 변화 카드</span></h1>
+	    </header>
+	    
+		<!--본문 내용--->
+		<section data-style="BG:images/page_055_1-5-2-5-1/bgs/배경.png">
+			
+			<div id="game-1">
+				
+				<!--게임 배경-->
+				<section class="game-bg">
+					<video src="images/page_055_1-5-2-5-1/motions/카드 섞기.mp4"></video>
+				</section>
+				
+				<!--게임 기능-->
+				<section class="game-start">
+					
+					<div class="info">
+						<div class="balloon">
+							<p>버튼을 눌러<br/>직업 가치관 카드를<br/>뽑아 활동에 활용해 <br/>보자.</p>
+						</div>                       
+						<img src="images/page_055_1-5-2-5-1/bgs/팽귄.gif" data-style="w:200"/>                       
+					</div>
+					
+					<button data-type="pick">카드 뽑기</button>
+					
+				</section>
+				
+				<!--게임 결과-->
+				<section class="game-result">
+					<div class="game-card">
+						
+						<h2 class="title"></h2>
+						<div>
+							<img class="img" src="images/page_055_1-5-2-5-1/cards/고령화.png" alt=""/>
+							<div>
+								<p class="note"></p>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+			
+		</section>
+	<!--화면 뷰 영역 끝-->	
+	</article></main>
+
+<!--컨테이너 끝-->
+</container></div></body></html>
